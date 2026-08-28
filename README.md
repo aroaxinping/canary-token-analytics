@@ -49,10 +49,10 @@ The analysis runs in three stages:
 
 ## Key findings
 
-- **AWS auto-quarantined the leaked key roughly 17 minutes after publication.** From that moment on the credential was inert — every later attempt hit a key that had been dead since minute 17.
-- **Attacker infrastructure escalated over the month.** The traffic moved from a camouflaged datacenter VPS (Frankfurt), to free cloud infrastructure (GCP), to US residential and mobile proxies, and finally to Indonesian ISPs — a progression from obvious datacenter origins toward harder-to-attribute residential ranges.
-- **Observed intents spanned several attacker phases.** They ranged from simple key validation, to reconnaissance, to an **IAM `CreateUser` persistence attempt**, to an **`InvokeModel` LLMjacking attempt against AWS Bedrock** (hijacking the account's model access for the attacker's own inference).
-- **None of it could have worked.** Every intent above was attempted against a credential AWS had already killed within the first 17 minutes.
+- **AWS auto-quarantined the original leaked key roughly 17 minutes after publication.** From that moment on the credential was inert — every later attempt on it hit a key that had been dead since minute 17.
+- **One coordinated actor dominates the traffic.** When the fleet went live, the `terraform.tfvars` key drew a **fan-out of ~15 IPs across ~11 countries all running an identical software build** (same Linux kernel, boto3 version, and retry mode), each taking a different step of the kill-chain. That is the signature of a single operator behind a rotating proxy pool, not many independent attackers — see [`docs/fleet_placement_analysis.md`](docs/fleet_placement_analysis.md).
+- **Intent skews toward LLMjacking.** The money-move events cluster on **AWS Bedrock** (`InvokeModel` / `Converse`), i.e. hijacking the account to run AI at the victim's expense — the newer monetization pattern for stolen cloud credentials. Recon and validation still dominate by volume, with an IAM `CreateUser` **persistence** attempt in the tail.
+- **A leaked key is hit within minutes.** Across the fleet, fresh placements begin drawing automated traffic almost immediately after exposure — and none of it could have worked, since every request landed on a canary that grants nothing.
 
 ## Scope & limitations
 
