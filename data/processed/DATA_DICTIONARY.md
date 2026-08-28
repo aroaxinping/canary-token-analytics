@@ -17,6 +17,9 @@ not be resolved are left empty — never guessed.
 | `event_name` | AWS API action / alert name that fired the canary. |
 | `user_agent` | Raw boto3/botocore user-agent string (empty for AWS-internal alerts). |
 | `alert_type` | Canary alert category: `ip_triggered`, `aws_internal`, or `safetynet`. |
+| `token_id` | Which canary token in the fleet fired this event (see `data/raw/fleet_registry.csv`). |
+| `placement` | The kind of file the leaked key was planted in (`.env`, `config.ini`, `settings.yaml`, `terraform.tfvars`). |
+| `channel` | How the alert was captured (`email`). |
 | `city` | City of the source IP (ipinfo.io). Empty for non-attacker sources. |
 | `region` | Region/state of the source IP (ipinfo.io). |
 | `country` | ISO country code of the source IP (ipinfo.io). |

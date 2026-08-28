@@ -22,37 +22,21 @@ from .taxonomy import classify_intent
 RAW_COLUMNS = [
     "seq", "datetime_utc", "date_utc", "time_utc",
     "source_ip", "event_name", "user_agent", "alert_type",
+    "token_id", "placement", "channel",
 ]
 
 
 def _read_raw(raw_path):
-    """Read the raw CSV robustly.
+    """Read the raw alerts CSV.
 
-    The ``user_agent`` field contains unquoted commas (e.g. ``m/D,Z,b,e``),
-    so a naive CSV parse fails. The first five columns and the trailing
-    ``alert_type`` never contain commas, so we split from both ends and
-    treat whatever remains in the middle as the user agent. This preserves
-    every original value exactly - nothing is dropped or altered.
+    The ``user_agent`` field can contain commas (e.g. ``m/D,Z,b,e``); the file
+    is written with standard CSV quoting, so pandas parses it directly. Every
+    field is kept as a string and empty cells stay as ``""`` (not ``NaN``) so
+    that blank ``source_ip`` / ``user_agent`` on AWS-side rows read as empty.
     """
-    rows = []
-    with open(raw_path, encoding="utf-8") as fh:
-        header = fh.readline().rstrip("\n").split(",")
-        assert header == RAW_COLUMNS, f"unexpected header: {header}"
-        for line in fh:
-            line = line.rstrip("\n")
-            if not line:
-                continue
-            parts = line.split(",")
-            seq, datetime_utc, date_utc, time_utc, source_ip, event_name = parts[:6]
-            alert_type = parts[-1]
-            user_agent = ",".join(parts[6:-1])
-            rows.append({
-                "seq": seq, "datetime_utc": datetime_utc, "date_utc": date_utc,
-                "time_utc": time_utc, "source_ip": source_ip,
-                "event_name": event_name, "user_agent": user_agent,
-                "alert_type": alert_type,
-            })
-    return pd.DataFrame(rows, columns=RAW_COLUMNS)
+    df = pd.read_csv(raw_path, dtype=str, keep_default_na=False)
+    assert list(df.columns) == RAW_COLUMNS, f"unexpected header: {list(df.columns)}"
+    return df
 
 
 def _is_attacker_ip(ip):

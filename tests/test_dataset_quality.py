@@ -19,7 +19,8 @@ ALLOWED_PHASES = {
 
 EXPECTED_COLUMNS = {
     "seq", "datetime_utc", "date_utc", "time_utc", "source_ip", "event_name",
-    "user_agent", "alert_type", "city", "region", "country", "asn", "org",
+    "user_agent", "alert_type", "token_id", "placement", "channel",
+    "city", "region", "country", "asn", "org",
     "infra_type", "ua_os", "ua_python", "ua_boto3", "ua_retry_mode",
     "tool_signature", "intent_phase", "intent_description",
 }
@@ -61,8 +62,16 @@ def test_intent_phase_values_are_all_valid(enriched):
 
 
 def test_required_fields_are_never_null(enriched):
-    for col in ("datetime_utc", "event_name", "alert_type", "intent_phase"):
+    for col in ("datetime_utc", "event_name", "alert_type", "intent_phase",
+                "token_id", "placement", "channel"):
         assert enriched[col].notna().all(), f"null found in {col}"
+
+
+def test_fleet_provenance_columns_are_populated(enriched):
+    # Every event must be attributable to a token, a placement, and a channel.
+    assert enriched["token_id"].notna().all()
+    assert (enriched["placement"].str.len() > 0).all()
+    assert (enriched["channel"].str.len() > 0).all()
 
 
 def test_attacker_rows_have_ip_and_country(enriched):
