@@ -1,0 +1,10 @@
+source_ip,city,region,country,asn,org,infra_type,gn_noise,gn_riot,gn_classification,gn_name
+146.103.40.12,Frankfurt am Main,Hesse,DE,AS215311,Regxa Company for Information Technology Ltd,datacenter VPS,,,,
+172.56.14.182,Sacramento,California,US,AS21928,"T-Mobile USA, Inc.",residential/mobile,,,,
+172.56.198.175,Boston,Massachusetts,US,AS21928,"T-Mobile USA, Inc.",residential/mobile,,,,
+172.58.243.229,Baltimore,Maryland,US,AS21928,"T-Mobile USA, Inc.",residential/mobile,,,,
+182.4.101.162,Yogyakarta,Yogyakarta,ID,AS23693,PT. Telekomunikasi Selular,residential/mobile,,,,
+202.179.188.22,Jakarta,Jakarta,ID,AS38750,"Telemedia Dinamika Sarana, PT",residential/ISP,,,,
+34.173.24.24,Council Bluffs,Iowa,US,AS396982,Google LLC,cloud,,,,
+99.63.197.17,Reston,Virginia,US,AS7018,"AT&T Enterprises, LLC",residential/mobile,,,,
+99.89.81.59,Lansing,Michigan,US,AS7018,"AT&T Enterprises, LLC",residential/mobile,,,,
