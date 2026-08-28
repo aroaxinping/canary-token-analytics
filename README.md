@@ -56,7 +56,7 @@ canary-token-analytics/
 │   ├── raw/        # source captures + fleet_registry.csv (token -> repo -> placement)
 │   └── processed/  # enriched, analysis-ready CSVs (the portfolio deliverable)
 ├── notebooks/      # exploratory analysis and visualization
-├── docs/           # methodology, placement analysis, per-IP dossiers, OSINT tooling, AWS ref
+├── docs/           # methodology, event cheat sheet, placement analysis, IP dossiers, OSINT, AWS ref
 ├── scripts/        # entry points, including build_dataset.py
 └── tests/          # unit + data-quality tests
 ```

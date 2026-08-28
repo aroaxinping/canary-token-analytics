@@ -14,6 +14,12 @@ Every distinct `event_name` in `alerts_enriched.csv`, mapped to the AWS service 
 | GetSendQuota | SES (Simple Email Service) | high | Returns email sending limits and usage | Abuse prep — check SES capacity before sending spam/phishing from the account |
 | GetServiceQuota | Service Quotas | high | Returns the value of a specific quota | Recon on resource limits to plan resource abuse |
 | InvokeModel | Bedrock | high | Runs inference against a foundation model | Resource abuse / **LLMjacking** — run paid AI models on the victim's bill |
+| Converse | Bedrock | high | Runs a chat-style conversation against a foundation model (the newer chat API) | Resource abuse / **LLMjacking** — chat-API variant of `InvokeModel` |
+| ListFoundationModels | Bedrock | high | Lists the foundation models available to the account/region | Abuse prep — enumerate which models can be hijacked before LLMjacking |
+| ListBuckets | S3 | high | Lists the account's S3 buckets | Recon — find data stores to read or exfiltrate |
+| ListSecrets | Secrets Manager | high | Lists secrets stored in AWS Secrets Manager | Recon — hunt for further stored credentials to escalate with |
+| ListUserPolicies | IAM | high | Lists the inline policies embedded in an IAM user | Gauge the user's privileges (inline policies) before acting |
+| ListFunctions20150331 | Lambda | high | Lists the account's Lambda functions (`20150331` is the API version date) | Recon — enumerate serverless compute available to abuse |
 | SNS | SNS (Simple Notification Service) | medium | Pub/sub messaging; here appears as an AWS-side safetynet signal, not a normal API name | Defense event (AWS fraud/leak flag) — no attacker rationale |
 | **GetRegions** | **Account Management (`account:GetRegions`) — PROBABLE** | **medium** | Lists the enabled/available AWS regions for the account | Enumerate reachable regions to find where to launch abuse or evade region-scoped guardrails |
 | **GetAccount** | **IAM `GetAccount*` family OR Account Management — AMBIGUOUS** | **low** | No service exposes a plain `GetAccount`; closest real actions below | Account-wide reconnaissance |
