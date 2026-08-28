@@ -14,6 +14,7 @@ import urllib.error
 
 IPINFO_URL = "https://ipinfo.io/{ip}/json"
 GREYNOISE_URL = "https://api.greynoise.io/v3/community/{ip}"
+IPAPI_BATCH_URL = "http://ip-api.com/batch"
 
 # IPs that are AWS's own detections, not attacker infrastructure.
 NON_ATTACKER_IPS = {"AWS Internal", "", None}
@@ -75,6 +76,62 @@ def lookup_ip(ip):
         result["org"] = _whois_org(ip)
 
     return result
+
+
+def ip_api_batch(ips, timeout=30):
+    """Batch-classify IPs' network type via ip-api.com.
+
+    Returns ``{ip: {"proxy": bool|None, "hosting": bool|None,
+    "mobile": bool|None, "asname": str|None}}``. ip-api's ``proxy`` /
+    ``hosting`` / ``mobile`` booleans are a reliable signal for whether an IP
+    is a proxy/VPN, a datacenter, or a mobile carrier — used to fill the gaps
+    the keyword classifier leaves. On any failure the IP maps to all-``None``.
+
+    The batch endpoint accepts up to 100 queries per call; larger inputs are
+    chunked. Non-attacker sources are skipped.
+    """
+    targets = [ip for ip in ips if ip not in NON_ATTACKER_IPS]
+    out = {ip: {"proxy": None, "hosting": None, "mobile": None, "asname": None}
+           for ip in targets}
+    fields = "query,proxy,hosting,mobile,asname,status"
+    for start in range(0, len(targets), 100):
+        chunk = targets[start:start + 100]
+        body = json.dumps([{"query": ip, "fields": fields} for ip in chunk])
+        req = urllib.request.Request(
+            IPAPI_BATCH_URL,
+            data=body.encode("utf-8"),
+            headers={"Content-Type": "application/json",
+                     "User-Agent": "canary-token-analytics"},
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+        except (urllib.error.URLError, urllib.error.HTTPError, ValueError, OSError):
+            continue
+        for r in data or []:
+            ip = r.get("query")
+            if ip in out and r.get("status") == "success":
+                out[ip] = {
+                    "proxy": bool(r.get("proxy")),
+                    "hosting": bool(r.get("hosting")),
+                    "mobile": bool(r.get("mobile")),
+                    "asname": r.get("asname") or None,
+                }
+    return out
+
+
+def infra_from_flags(flags):
+    """Fallback infra_type from ip-api boolean flags, when keywords fail.
+
+    ``flags`` is one value dict from :func:`ip_api_batch`. Returns a label or
+    ``None``. Mobile takes precedence (a mobile carrier can also read as
+    hosting); then hosting/proxy -> 'datacenter/hosting'.
+    """
+    if flags.get("mobile"):
+        return "residential/mobile"
+    if flags.get("hosting") or flags.get("proxy"):
+        return "datacenter/hosting"
+    return None
 
 
 # Keyword -> infra_type, ordered from most to least specific.
