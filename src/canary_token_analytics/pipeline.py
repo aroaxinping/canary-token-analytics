@@ -15,6 +15,8 @@ from .enrich import (
     parse_boto3_user_agent,
     classify_infra_type,
     greynoise_community,
+    ip_api_batch,
+    infra_from_flags,
     NON_ATTACKER_IPS,
 )
 from .taxonomy import classify_intent
@@ -45,15 +47,25 @@ def _is_attacker_ip(ip):
 
 def build_ip_intel(unique_ips, log=print):
     """Look up each unique attacker IP once. Returns {ip: intel_dict}."""
+    log(f"  batch network-type lookup for {len(unique_ips)} IPs (ip-api) ...")
+    net = ip_api_batch(unique_ips)
+
     intel = {}
     for ip in unique_ips:
         log(f"  looking up {ip} ...")
         geo = lookup_ip(ip)
         gn = greynoise_community(ip)
-        infra = classify_infra_type(geo["org"], geo["asn"])
+        flags = net.get(ip, {"proxy": None, "hosting": None, "mobile": None, "asname": None})
+        # Keyword classifier first; fall back to the ip-api flags rather than
+        # leaving the type blank when the org string is ambiguous.
+        infra = classify_infra_type(geo["org"], geo["asn"]) or infra_from_flags(flags)
         intel[ip] = {
             **geo,
             "infra_type": infra,
+            "asname": flags["asname"],
+            "is_proxy": flags["proxy"],
+            "is_hosting": flags["hosting"],
+            "is_mobile": flags["mobile"],
             "gn_noise": gn["noise"],
             "gn_riot": gn["riot"],
             "gn_classification": gn["classification"],
@@ -94,6 +106,10 @@ def run_pipeline(raw_path, processed_dir, log=print):
             "asn": geo.get("asn"),
             "org": geo.get("org"),
             "infra_type": geo.get("infra_type"),
+            "asname": geo.get("asname"),
+            "is_proxy": geo.get("is_proxy"),
+            "is_hosting": geo.get("is_hosting"),
+            "is_mobile": geo.get("is_mobile"),
             "ua_os": ua["os"],
             "ua_python": ua["python_version"],
             "ua_boto3": ua["boto3_version"],
@@ -116,6 +132,10 @@ def run_pipeline(raw_path, processed_dir, log=print):
             "asn": d["asn"],
             "org": d["org"],
             "infra_type": d["infra_type"],
+            "asname": d["asname"],
+            "is_proxy": d["is_proxy"],
+            "is_hosting": d["is_hosting"],
+            "is_mobile": d["is_mobile"],
             "gn_noise": d["gn_noise"],
             "gn_riot": d["gn_riot"],
             "gn_classification": d["gn_classification"],

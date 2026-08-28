@@ -68,6 +68,21 @@ INTENT_TAXONOMY = {
         "Enumerates the account's S3 buckets, hunting for accessible or "
         "exfiltratable data stores",
     ),
+    "ListUsers": (
+        "reconnaissance",
+        "Enumerates the account's IAM users, mapping identities and escalation "
+        "targets",
+    ),
+    "ListStacks": (
+        "reconnaissance",
+        "Enumerates CloudFormation stacks, hunting for infrastructure "
+        "definitions and embedded parameters",
+    ),
+    "PutUserPolicy": (
+        "persistence",
+        "Attaches an inline policy to an IAM user - privilege escalation, an "
+        "attempt to grant itself durable permissions",
+    ),
     "ListFunctions20150331": (
         "reconnaissance",
         "Enumerates the account's Lambda functions (the 20150331 API version "

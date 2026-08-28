@@ -21,7 +21,8 @@ EXPECTED_COLUMNS = {
     "seq", "datetime_utc", "date_utc", "time_utc", "source_ip", "event_name",
     "user_agent", "alert_type", "token_id", "placement", "channel",
     "city", "region", "country", "asn", "org",
-    "infra_type", "ua_os", "ua_python", "ua_boto3", "ua_retry_mode",
+    "infra_type", "asname", "is_proxy", "is_hosting", "is_mobile",
+    "ua_os", "ua_python", "ua_boto3", "ua_retry_mode",
     "tool_signature", "intent_phase", "intent_description",
 }
 
