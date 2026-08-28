@@ -1,6 +1,6 @@
 # canary-token-analytics
 
-Threat-intelligence analysis of a deliberately leaked AWS canary token and the 16 real intrusion attempts it recorded.
+Threat-intelligence analysis of a fleet of deliberately leaked AWS canary tokens and the real intrusion attempts they recorded (91 events and counting).
 
 ## What is a canary token?
 
@@ -10,7 +10,7 @@ A canary token is a fake credential that has no real access to anything. Its onl
 
 The data is **self-generated original data**, not a downloaded or public dataset: a fake-but-real AWS canary token was deliberately published inside a public GitHub repository, and every subsequent attempt to use it was captured as an alert email. Each event corresponds to a real actor — an automated bot or an AWS-side defense — trying to do something with a credential that was already dead.
 
-The first token produced **16 events over roughly one month**. Since expanding to the fleet below, the dataset has grown to **43 events (as of 2026-08-28) and keeps growing** as the tokens keep firing — see [`docs/fleet_placement_analysis.md`](docs/fleet_placement_analysis.md) for the first cross-placement finding.
+The first token produced **16 events over roughly one month**. Since expanding to the fleet below, the dataset has grown to **91 events (as of 2026-08-28) and keeps growing** as the tokens keep firing — see [`docs/fleet_placement_analysis.md`](docs/fleet_placement_analysis.md) for the first cross-placement finding.
 
 ## Data collection: the honeypot fleet
 
@@ -50,13 +50,13 @@ The analysis runs in three stages:
 ## Key findings
 
 - **AWS auto-quarantined the original leaked key roughly 17 minutes after publication.** From that moment on the credential was inert — every later attempt on it hit a key that had been dead since minute 17.
-- **One coordinated actor dominates the traffic.** When the fleet went live, the `terraform.tfvars` key drew a **fan-out of ~15 IPs across ~11 countries all running an identical software build** (same Linux kernel, boto3 version, and retry mode), each taking a different step of the kill-chain. That is the signature of a single operator behind a rotating proxy pool, not many independent attackers — see [`docs/fleet_placement_analysis.md`](docs/fleet_placement_analysis.md).
-- **Intent skews toward LLMjacking.** The money-move events cluster on **AWS Bedrock** (`InvokeModel` / `Converse`), i.e. hijacking the account to run AI at the victim's expense — the newer monetization pattern for stolen cloud credentials. Recon and validation still dominate by volume, with an IAM `CreateUser` **persistence** attempt in the tail.
+- **One coordinated actor dominates the traffic.** The `terraform.tfvars` key drew a **fan-out of 53 IPs across 23 countries all running an identical software build** (same Linux kernel, boto3 version, and retry mode), each taking a different step of the kill-chain. **48 of 53** of those IPs resolve to hosting/proxy networks (M247, HostRoyale, ServerMania, Leaseweb…) — the signature of a single operator behind a rotating proxy pool, not many independent attackers. See [`docs/fleet_placement_analysis.md`](docs/fleet_placement_analysis.md).
+- **Intent skews toward LLMjacking, with a privilege-escalation attempt.** The money-move events cluster on **AWS Bedrock** (`InvokeModel` / `Converse`) — hijacking the account to run AI at the victim's expense. Separately, a hands-on operator on the `config.ini` key attempted **`PutUserPolicy`** (granting itself durable permissions), and one IP (`197.57.31.248`) worked **two** different placements — actors handle multiple keys.
 - **A leaked key is hit within minutes.** Across the fleet, fresh placements begin drawing automated traffic almost immediately after exposure — and none of it could have worked, since every request landed on a canary that grants nothing.
 
 ## Scope & limitations
 
-- **Small dataset.** 43 events is enough to describe behavior, not to make statistical claims. Treat every observation as descriptive, not inferential.
+- **Small dataset.** 91 events is enough to describe behavior, not to make statistical claims. Treat every observation as descriptive, not inferential.
 - **Descriptive, not predictive.** This is descriptive threat-intelligence analysis, not statistical modelling. It characterizes what happened; it does not forecast or generalize to a population.
 - **Placement is confounded.** With one repository per placement, the concentration of traffic on `terraform.tfvars` cannot be cleanly attributed to the file type — it is confounded with which specific key reached a shared credential feed. See [`docs/fleet_placement_analysis.md`](docs/fleet_placement_analysis.md).
 - **No attribution of people.** Enrichment identifies infrastructure (IPs, ASNs, geography), not the humans behind it. Attributing individuals is out of scope and would require legal process.
