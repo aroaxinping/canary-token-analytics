@@ -1,12 +1,12 @@
 # Data Dictionary — processed canary-token dataset
 
 Enriched from `data/raw/canary_alerts_raw.csv`, the real events captured by the
-canary-token fleet (36 events as of 2026-08-28, and growing as tokens keep
+canary-token fleet (43 events as of 2026-08-28, and growing as tokens keep
 firing). Geo/ASN/org values come from live `ipinfo.io` lookups; GreyNoise
 columns come from the GreyNoise community API. Fields that could not be
 resolved are left empty — never guessed.
 
-## `alerts_enriched.csv` — one row per event (36 rows)
+## `alerts_enriched.csv` — one row per event (43 rows)
 
 | Column | Description |
 | --- | --- |
@@ -35,7 +35,7 @@ resolved are left empty — never guessed.
 | `intent_phase` | Attack-lifecycle phase (see taxonomy): `validation`, `reconnaissance`, `abuse-prep`, `persistence`, `resource-abuse`, `defense`. |
 | `intent_description` | Human-readable explanation of the operator's intent for that event. |
 
-## `ip_intel.csv` — one row per unique attacker IP (22 rows)
+## `ip_intel.csv` — one row per unique attacker IP (28 rows)
 
 | Column | Description |
 | --- | --- |
@@ -63,7 +63,7 @@ resolved are left empty — never guessed.
   `noise=true` (a known internet-wide scanner, last seen 2026-08-27). Treat
   the empty `gn_*` fields as "not retrieved", and re-run individual lookups
   when the signal matters.
-- **`infra_type` is blank for 10 of 22 IPs.** The classifier is keyword-based
+- **`infra_type` is blank for 14 of 28 IPs.** The classifier is keyword-based
   and only labels networks it can identify with confidence (cloud, datacenter
   VPS, residential ISP/mobile). Ambiguous org strings (e.g. `B2 Net Solutions
   Inc.`, `Hype Enterprises`) are left empty rather than guessed. Several of

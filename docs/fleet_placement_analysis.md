@@ -1,11 +1,11 @@
 # Why the fleet traffic concentrates on one placement
 
-On 2026-08-28 the fleet recorded 20 events in a single morning. They are not
+On 2026-08-28 the fleet recorded 27 events in a single morning. They are not
 spread evenly across the five tokens — they pile onto one:
 
 | Placement | Token | Events | Distinct IPs | Countries |
 |---|---|---:|---:|---:|
-| `terraform.tfvars` | 5 | 13 | 11 | 8 |
+| `terraform.tfvars` | 5 | 20 | 17 | 12 |
 | `settings.yaml` | 4 | 6 | 1 | 1 |
 | `.env` | 1 | 1 | 1 | 1 |
 
@@ -17,27 +17,33 @@ supported by this data**, and the reason why is the interesting part.
 The traffic to `terraform.tfvars` and to `settings.yaml` are behaviourally
 opposite.
 
-**`terraform.tfvars` — a fan-out / shared-list signature.** Nine of its 13
+**`terraform.tfvars` — a fan-out / shared-list signature.** Sixteen of its 20
 events carry an *identical* software fingerprint: kernel
 `linux#6.12.43+deb13-amd64`, `boto3 1.43.80`, `retry-mode legacy` — the same
-Debian 13 build. Those nine events come from **nine different IPs in seven
-countries** (MT, US, FR, CH, IT, GB, FI), each firing roughly once, over the
-course of an hour, and each performing a *different* step of the kill-chain:
+Debian 13 build. Those sixteen events come from **fifteen different IPs in
+eleven countries**, each firing roughly once, over the course of two hours, and
+each performing a *different* step of the kill-chain:
 
 ```
-ListFoundationModels  (Bedrock recon)
-Converse / InvokeModel (Bedrock abuse — LLMjacking)
-ListSecrets           (hunt for more credentials)
-ListUserPolicies      (permission enumeration)
-GetCallerIdentity ×3  (redundant validation)
+GetCallerIdentity ×5   (redundant validation)
+ListUserPolicies ×3    (permission enumeration)
+ListFoundationModels ×2 (Bedrock recon)
+Converse / InvokeModel ×3 (Bedrock abuse — LLMjacking)
+ListSecrets            (hunt for more credentials)
+ListBuckets            (hunt for S3 data stores)
+GetSendQuota           (SES abuse prep)
 ```
 
-Nine "different" hosts running one very specific kernel build, each taking one
-step, is not nine independent attackers. It is **one operator behind a rotating
-proxy / botnet pool** (or one tool shared across a crew), spreading the calls
-over many egress IPs to dodge per-IP rate-limiting and attribution. The
-remaining four events on this key are 2–3 unrelated actors on their own builds
-(Debian bullseye + `boto3 1.43.81`; Windows + `boto3 1.42.65`).
+Fifteen "different" hosts running one very specific kernel build, each taking
+one step, is not fifteen independent attackers. It is **one operator behind a
+rotating proxy / botnet pool** (or one tool shared across a crew), spreading the
+calls over many egress IPs to dodge per-IP rate-limiting and attribution. The
+remaining events on this key are 2–3 unrelated actors on their own builds
+(Debian bullseye + `boto3 1.43.81`; Windows + `boto3 1.42.65`). Corroborating
+this, 8 of the 9 fan-out IPs checked resolve to hosting/proxy providers
+(ip-api `proxy`/`hosting` flags): Datalix, code200 UAB, ServerMania, Creanova,
+HostRoyale, HostPapa — a commercial proxy pool, not independent residential
+hosts.
 
 **`settings.yaml` — a single-operator signature.** All six of its events come
 from **one** IP (`197.57.31.248`, Telecom Egypt) working a checklist in

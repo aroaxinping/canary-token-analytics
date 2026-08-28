@@ -10,7 +10,7 @@ A canary token is a fake credential that has no real access to anything. Its onl
 
 The data is **self-generated original data**, not a downloaded or public dataset: a fake-but-real AWS canary token was deliberately published inside a public GitHub repository, and every subsequent attempt to use it was captured as an alert email. Each event corresponds to a real actor — an automated bot or an AWS-side defense — trying to do something with a credential that was already dead.
 
-The first token produced **16 events over roughly one month**. Since expanding to the fleet below, the dataset has grown to **36 events (as of 2026-08-28) and keeps growing** as the tokens keep firing — see [`docs/fleet_placement_analysis.md`](docs/fleet_placement_analysis.md) for the first cross-placement finding.
+The first token produced **16 events over roughly one month**. Since expanding to the fleet below, the dataset has grown to **43 events (as of 2026-08-28) and keeps growing** as the tokens keep firing — see [`docs/fleet_placement_analysis.md`](docs/fleet_placement_analysis.md) for the first cross-placement finding.
 
 ## Data collection: the honeypot fleet
 
