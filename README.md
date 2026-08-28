@@ -8,11 +8,13 @@ A canary token is a fake credential that has no real access to anything. Its onl
 
 ## The dataset
 
-This repository analyzes **16 real events collected over roughly one month**. The data is **self-generated original data**, not a downloaded or public dataset: a fake-but-real AWS canary token was deliberately published inside a public GitHub repository, and every subsequent attempt to use it was captured as an alert email. Each event corresponds to a real actor — an automated bot or an AWS-side defense — trying to do something with a credential that was already dead.
+The data is **self-generated original data**, not a downloaded or public dataset: a fake-but-real AWS canary token was deliberately published inside a public GitHub repository, and every subsequent attempt to use it was captured as an alert email. Each event corresponds to a real actor — an automated bot or an AWS-side defense — trying to do something with a credential that was already dead.
+
+The first token produced **16 events over roughly one month**. Since expanding to the fleet below, the dataset has grown to **36 events (as of 2026-08-28) and keeps growing** as the tokens keep firing — see [`docs/fleet_placement_analysis.md`](docs/fleet_placement_analysis.md) for the first cross-placement finding.
 
 ## Data collection: the honeypot fleet
 
-The 16 events above came from a **single** token. To grow the dataset into something that can eventually support statistics — and to compare how the *placement* of a leaked key affects how fast it is found — the token is now one of a small **fleet** of canary tokens, each planted in a different public repository and a different kind of file:
+The first month's events came from a **single** token. To grow the dataset into something that can eventually support statistics — and to compare how the *placement* of a leaked key affects how fast it is found — the token is now one of a small **fleet** of canary tokens, each planted in a different public repository and a different kind of file:
 
 | Token | Repository | Placement |
 |---|---|---|
@@ -54,7 +56,7 @@ canary-token-analytics/
 │   ├── raw/        # source captures + fleet_registry.csv (token -> repo -> placement)
 │   └── processed/  # enriched, analysis-ready CSVs (the portfolio deliverable)
 ├── notebooks/      # exploratory analysis and visualization
-├── docs/           # methodology, per-IP dossiers, OSINT tooling, AWS service reference
+├── docs/           # methodology, placement analysis, per-IP dossiers, OSINT tooling, AWS ref
 ├── scripts/        # entry points, including build_dataset.py
 └── tests/          # unit + data-quality tests
 ```
