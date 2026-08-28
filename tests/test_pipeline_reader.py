@@ -7,9 +7,13 @@ recover every original value exactly rather than mis-splitting columns.
 from canary_token_analytics.pipeline import _read_raw, RAW_COLUMNS
 
 
-def test_reads_all_sixteen_rows_with_expected_columns(raw_csv):
+def test_reads_every_row_with_expected_columns(raw_csv):
     df = _read_raw(raw_csv)
-    assert len(df) == 16
+    # The dataset grows as the fleet keeps firing; assert on invariants, not a
+    # frozen row count. Every non-header line must parse into the full schema.
+    raw_lines = raw_csv.read_text().strip().splitlines()
+    assert len(df) == len(raw_lines) - 1
+    assert len(df) >= 16
     assert list(df.columns) == RAW_COLUMNS
 
 

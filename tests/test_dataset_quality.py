@@ -42,8 +42,10 @@ def ip_intel(processed_dir):
     return pd.read_csv(path)
 
 
-def test_exactly_sixteen_events(enriched):
-    assert len(enriched) == 16
+def test_event_count_is_stable_and_nontrivial(enriched):
+    # Grows as the fleet fires; started at 16. Guard against an empty or
+    # truncated regeneration, not against a specific frozen count.
+    assert len(enriched) >= 16
 
 
 def test_expected_columns_present(enriched):
@@ -51,7 +53,7 @@ def test_expected_columns_present(enriched):
 
 
 def test_seq_is_unique_and_complete(enriched):
-    assert sorted(enriched["seq"].tolist()) == list(range(1, 17))
+    assert sorted(enriched["seq"].tolist()) == list(range(1, len(enriched) + 1))
 
 
 def test_intent_phase_values_are_all_valid(enriched):
@@ -76,11 +78,14 @@ def test_fleet_provenance_columns_are_populated(enriched):
 
 def test_attacker_rows_have_ip_and_country(enriched):
     attackers = enriched[enriched["alert_type"] == "ip_triggered"]
-    assert len(attackers) == 13
+    assert len(attackers) >= 13
     assert attackers["source_ip"].notna().all()
     assert attackers["country"].notna().all()
 
 
-def test_ip_intel_has_nine_unique_ips(ip_intel):
-    assert len(ip_intel) == 9
-    assert ip_intel["source_ip"].nunique() == 9
+def test_ip_intel_covers_every_unique_attacker_ip(enriched, ip_intel):
+    # One intel row per distinct attacker IP, no duplicates, no gaps.
+    attacker_ips = set(enriched.loc[enriched["alert_type"] == "ip_triggered",
+                                    "source_ip"])
+    assert ip_intel["source_ip"].nunique() == len(ip_intel)
+    assert set(ip_intel["source_ip"]) == attacker_ips
