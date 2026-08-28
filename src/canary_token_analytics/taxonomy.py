@@ -63,6 +63,11 @@ INTENT_TAXONOMY = {
         "Enumerates AWS Secrets Manager entries, hunting for further stored "
         "credentials to escalate with",
     ),
+    "ListBuckets": (
+        "reconnaissance",
+        "Enumerates the account's S3 buckets, hunting for accessible or "
+        "exfiltratable data stores",
+    ),
     "ListFunctions20150331": (
         "reconnaissance",
         "Enumerates the account's Lambda functions (the 20150331 API version "
