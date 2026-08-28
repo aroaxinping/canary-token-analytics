@@ -26,6 +26,19 @@ The first month's events came from a **single** token. To grow the dataset into 
 
 Each token is unique, so every alert is attributable back to a specific repo and placement (see [`data/raw/fleet_registry.csv`](data/raw/fleet_registry.csv)). Those repositories are intentionally thin instruments of the experiment, each carrying a clear note that the credential is a canary token; this repository is where their data is collected and analyzed.
 
+## Why a leaked key is a target: how it gets monetised
+
+An AWS access key is effectively **a payment method wired to an infinite supermarket of compute**. Anyone holding it can order Amazon services *as the victim's account* — and the bill lands on the victim. "Free for the attacker" always means the same thing: someone else pays. That is why bots start testing a key within minutes of it hitting a public repo, probing for these four businesses:
+
+| AWS service | What it rents | How it's monetised | Events seen in this data |
+|---|---|---|---|
+| **Bedrock** | AI models | Free/resold AI on the victim's bill (**LLMjacking**) | `InvokeModel`, `Converse`, `ListFoundationModels` |
+| **SES** | Email delivery | Phishing that inherits Amazon's inbox reputation | `GetSendQuota` |
+| **S3** | Storage | Steal and sell the victim's data | `ListBuckets` |
+| **IAM** | Users & permissions | Create a back door that survives key revocation | `CreateUser` |
+
+See [`docs/how_a_stolen_key_is_monetised.md`](docs/how_a_stolen_key_is_monetised.md) for the full walkthrough, and [`docs/event_cheatsheet.md`](docs/event_cheatsheet.md) for what every observed API call does.
+
 ## Pipeline
 
 The analysis runs in three stages:
@@ -56,7 +69,7 @@ canary-token-analytics/
 │   ├── raw/        # source captures + fleet_registry.csv (token -> repo -> placement)
 │   └── processed/  # enriched, analysis-ready CSVs (the portfolio deliverable)
 ├── notebooks/      # exploratory analysis and visualization
-├── docs/           # methodology, event cheat sheet, placement analysis, IP dossiers, OSINT, AWS ref
+├── docs/           # methodology, monetisation primer, event cheat sheet, placement analysis, IP dossiers, OSINT
 ├── scripts/        # entry points, including build_dataset.py
 └── tests/          # unit + data-quality tests
 ```
