@@ -53,6 +53,31 @@ INTENT_TAXONOMY = {
         "Checks the SES email sending quota - precursor to spam/phishing "
         "from the account",
     ),
+    "ListUserPolicies": (
+        "reconnaissance",
+        "Enumerates the account's identity, permissions, roles, regions or "
+        "limits",
+    ),
+    "ListSecrets": (
+        "reconnaissance",
+        "Enumerates AWS Secrets Manager entries, hunting for further stored "
+        "credentials to escalate with",
+    ),
+    "ListFunctions20150331": (
+        "reconnaissance",
+        "Enumerates the account's Lambda functions (the 20150331 API version "
+        "of ListFunctions)",
+    ),
+    "ListFoundationModels": (
+        "abuse-prep",
+        "Enumerates which Bedrock foundation models the account can reach - "
+        "precursor to LLMjacking",
+    ),
+    "Converse": (
+        "resource-abuse",
+        "Attempts to run AI models on AWS Bedrock at the victim's expense "
+        "(LLMjacking), via the Bedrock Converse chat API",
+    ),
     "CreateUser": (
         "persistence",
         "Attempts to create a new IAM user to retain access even if the "
