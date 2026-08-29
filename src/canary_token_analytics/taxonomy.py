@@ -78,6 +78,19 @@ INTENT_TAXONOMY = {
         "Enumerates CloudFormation stacks, hunting for infrastructure "
         "definitions and embedded parameters",
     ),
+    "ListTopics": (
+        "reconnaissance",
+        "Enumerates SNS topics — messaging infrastructure that can be abused "
+        "for spam or pivoting",
+    ),
+    "ListAccountAliases": (
+        "reconnaissance",
+        "Enumerates the account's IAM alias — cheap account fingerprinting",
+    ),
+    "DescribeInstances": (
+        "reconnaissance",
+        "Enumerates EC2 instances, mapping running compute to hijack or abuse",
+    ),
     "PutUserPolicy": (
         "persistence",
         "Attaches an inline policy to an IAM user - privilege escalation, an "

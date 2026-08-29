@@ -1,12 +1,12 @@
 # Data Dictionary — processed canary-token dataset
 
 Enriched from `data/raw/canary_alerts_raw.csv`, the real events captured by the
-canary-token fleet (91 events as of 2026-08-28, and growing as tokens keep
+canary-token fleet (116 events as of 2026-08-28, and growing as tokens keep
 firing). Geo/ASN/org values come from live `ipinfo.io` lookups; GreyNoise
 columns come from the GreyNoise community API. Fields that could not be
 resolved are left empty — never guessed.
 
-## `alerts_enriched.csv` — one row per event (91 rows)
+## `alerts_enriched.csv` — one row per event (116 rows)
 
 | Column | Description |
 | --- | --- |
@@ -35,11 +35,11 @@ resolved are left empty — never guessed.
 | `ua_python` | Python version parsed from the user agent. |
 | `ua_boto3` | Boto3 version parsed from the user agent. |
 | `ua_retry_mode` | Botocore retry mode: `legacy`, `standard`, or `adaptive`. |
-| `tool_signature` | Named attacker tool appended to the UA (`DeepAWSAnalyzer/Pro`, `iam_masscek/2.0`), else empty. |
+| `tool_signature` | Named tool in the UA — attacker tooling (`DeepAWSAnalyzer/Pro`, `iam_masscek/2.0`) or a security scanner (`TruffleHog`), else empty. |
 | `intent_phase` | Attack-lifecycle phase (see taxonomy): `validation`, `reconnaissance`, `abuse-prep`, `persistence`, `resource-abuse`, `defense`. |
 | `intent_description` | Human-readable explanation of the operator's intent for that event. |
 
-## `ip_intel.csv` — one row per unique attacker IP (68 rows)
+## `ip_intel.csv` — one row per unique attacker IP (84 rows)
 
 | Column | Description |
 | --- | --- |
@@ -71,7 +71,7 @@ resolved are left empty — never guessed.
   `noise=true` (a known internet-wide scanner, last seen 2026-08-27). Treat
   the empty `gn_*` fields as "not retrieved", and re-run individual lookups
   when the signal matters.
-- **`infra_type` now resolves for all but 6 of 68 IPs.** The keyword classifier
+- **`infra_type` now resolves for all but 6 of 84 IPs.** The keyword classifier
   runs first; where an org string is ambiguous (e.g. `B2 Net Solutions Inc.`),
   the ip-api `proxy`/`hosting`/`mobile` flags fill the gap with a reliable
   signal (`datacenter/hosting` or `residential/mobile`) instead of leaving it
