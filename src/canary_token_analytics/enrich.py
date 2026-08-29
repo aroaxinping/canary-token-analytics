@@ -177,7 +177,7 @@ _OS_RE = re.compile(r"os/([^\s#]+)(?:#([^\s]+))?")
 _RETRY_RE = re.compile(r"cfg/retry-mode#(\S+)")
 
 # Named attacker tools appended to the UA.
-_KNOWN_TOOLS = ("DeepAWSAnalyzer/Pro", "iam_masscek/2.0")
+_KNOWN_TOOLS = ("DeepAWSAnalyzer/Pro", "iam_masscek/2.0", "TruffleHog")
 
 
 def parse_boto3_user_agent(ua):
