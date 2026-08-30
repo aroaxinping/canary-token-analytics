@@ -18,7 +18,15 @@ RAW_COLUMNS = [
     "token_id", "placement", "channel",
 ]
 
-_IP_RE = re.compile(r"Source IP:\s*\n\s*([0-9A-Fa-f:.]+)")
+_SRC_RE = re.compile(r"Source IP:\s*\n\s*(.*)")
+_IPV4_RE = re.compile(r"^\d{1,3}(?:\.\d{1,3}){3}$")
+
+
+def _is_ip(text):
+    """True if ``text`` looks like a real IPv4 or IPv6 address."""
+    if _IPV4_RE.match(text):
+        return True
+    return ":" in text and re.match(r"^[0-9A-Fa-f:.]+$", text) is not None
 _DATE_RE = re.compile(r"Date:\s*\n\s*(\d{4})/(\d{2})/(\d{2})")
 _TIME_RE = re.compile(r"Time:\s*\n\s*(\d{2}:\d{2})")
 _UA_RE = re.compile(r"User agent:\s*\n\s*(.+)")
@@ -55,8 +63,16 @@ def parse_alert_email(body, token_map=None):
     if not (m_date and m_time and m_event):
         return None
 
-    ip_m = _IP_RE.search(body)
-    source_ip = ip_m.group(1) if ip_m else ""
+    src_m = _SRC_RE.search(body)
+    source_raw = src_m.group(1).strip() if src_m else ""
+    # A real attacker IP vs AWS's own detections ("AWS Internal") or a blank
+    # source (AWS-side safetynet flags). Only the former is an attacker.
+    if _is_ip(source_raw):
+        source_ip, alert_type = source_raw, "ip_triggered"
+    elif source_raw:
+        source_ip, alert_type = source_raw, "aws_internal"
+    else:
+        source_ip, alert_type = "", "safetynet"
 
     ua_m = _UA_RE.search(body)
     user_agent = ua_m.group(1).strip() if ua_m else ""
@@ -86,7 +102,7 @@ def parse_alert_email(body, token_map=None):
         "source_ip": source_ip,
         "event_name": m_event.group(1),
         "user_agent": user_agent,
-        "alert_type": "ip_triggered" if source_ip else "aws_internal",
+        "alert_type": alert_type,
         "token_id": token_id,
         "placement": placement,
         "channel": "email",
