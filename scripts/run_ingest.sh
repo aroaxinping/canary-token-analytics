@@ -15,4 +15,6 @@ cd "$REPO" || exit 1
 echo "=== $(date -u +%Y-%m-%dT%H:%M:%SZ) ingest run ===" >> "$LOG"
 "$UV" run --extra gmail python scripts/fetch_gmail.py >> "$LOG" 2>&1
 "$UV" run python scripts/build_dataset.py             >> "$LOG" 2>&1
+# A/B experiment: attribute the pilot's alerts (fetch_gmail already cached them).
+"$UV" run python experiment/scripts/ingest_experiment.py >> "$LOG" 2>&1
 echo "=== done $(date -u +%H:%M:%SZ) ===" >> "$LOG"
