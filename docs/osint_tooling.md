@@ -46,6 +46,23 @@ are listed for completeness and explicitly marked.
 | `dig -x` / PTR (CLI) | Open-source CLI | Reverse-DNS / PTR hostname | Passive |
 | FarSight DNSDB / SecurityTrails | Free service (API key) | Historical/passive DNS (A/PTR over time) | Passive |
 
+### Vulnerability / CVE enrichment
+| Name | Open-source vs free-service | What it yields | Passive/Active |
+|---|---|---|---|
+| Shodan InternetDB | Free service (no key) | The list of CVE IDs a host is exposed to (from Shodan's prior scans) | Passive |
+| Shodan CVEDB (`cvedb.shodan.io`) | Free service (no key) | Per-CVE **CVSS** (severity 0–10), **EPSS** (exploitation probability), **KEV** flag (CISA Known-Exploited), and summary | Passive |
+| CISA KEV catalog | Open data | Which CVEs are confirmed exploited in the wild | Passive |
+| FIRST EPSS | Open data | Probability a CVE will be exploited | Passive |
+
+*Method:* the CVE IDs from InternetDB are enriched via CVEDB to rank each host's
+exposure by severity and flag remote-code-execution (RCE) and actively-exploited
+(KEV) vulnerabilities. Feeds [`pool_cve_inventory.md`](pool_cve_inventory.md) (full
+205-CVE table), [`attacker_ip_cve_report.txt`](attacker_ip_cve_report.txt) (per-IP
+CVE/RCE report), and the finding in
+[`pool_infrastructure.md`](pool_infrastructure.md) — that several proxy-pool egress
+nodes run end-of-life Squid/Apache with heavy CVE loads, i.e. likely-compromised
+boxes recycled as proxies.
+
 ### Reputation / threat
 | Name | Open-source vs free-service | What it yields | Passive/Active |
 |---|---|---|---|
