@@ -30,3 +30,12 @@ data/raw/emails_cache/
 
 # OS
 .DS_Store
+logs/
+
+# A/B experiment — built repos hold injected live keys at deploy time
+experiment/build/
+
+# ...but DO commit the experiment template .env files — placeholders / documented
+# fakes only, no real secrets, and needed for build_repos.py to work.
+!experiment/templates/env/.env
+!experiment/templates/control/.env
