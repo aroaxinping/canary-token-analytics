@@ -16,6 +16,11 @@ dist/
 # Environment / secrets
 .env
 
+# Gmail ingestion — OAuth secrets and fetched raw bodies (never commit)
+credentials.json
+token.json
+data/raw/emails_cache/
+
 # Notebooks
 .ipynb_checkpoints/
 
