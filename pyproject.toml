@@ -21,6 +21,11 @@ dev = [
     "matplotlib",
     "ruff",
 ]
+gmail = [
+    "google-api-python-client",
+    "google-auth-oauthlib",
+    "google-auth-httplib2",
+]
 
 [tool.setuptools.packages.find]
 where = ["src"]
