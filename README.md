@@ -1,6 +1,6 @@
 # canary-token-analytics
 
-Threat-intelligence analysis of a fleet of deliberately leaked AWS canary tokens and the real intrusion attempts they recorded (116 events and counting).
+Threat-intelligence analysis of a fleet of deliberately leaked AWS canary tokens and the real intrusion attempts they recorded (462 events and counting).
 
 ## What is a canary token?
 
@@ -10,7 +10,7 @@ A canary token is a fake credential that has no real access to anything. Its onl
 
 The data is **self-generated original data**, not a downloaded or public dataset: a fake-but-real AWS canary token was deliberately published inside a public GitHub repository, and every subsequent attempt to use it was captured as an alert email. Each event corresponds to a real actor — an automated bot or an AWS-side defense — trying to do something with a credential that was already dead.
 
-The first token produced **16 events over roughly one month**. Since expanding to the fleet below, the dataset has grown to **116 events (as of 2026-08-28) and keeps growing** as the tokens keep firing — see [`docs/fleet_placement_analysis.md`](docs/fleet_placement_analysis.md) for the first cross-placement finding.
+The first token produced **16 events over roughly one month**. Since expanding to the fleet below, the dataset has grown to **462 events (as of 2026-08-30) and keeps growing** as the tokens keep firing — see [`docs/fleet_placement_analysis.md`](docs/fleet_placement_analysis.md) for the first cross-placement finding.
 
 ## Data collection: the honeypot fleet
 
@@ -56,7 +56,7 @@ The analysis runs in three stages:
 
 ## Scope & limitations
 
-- **Small dataset.** 116 events is enough to describe behavior, not to make statistical claims. Treat every observation as descriptive, not inferential.
+- **Small dataset.** 462 events is enough to describe behavior, not to make statistical claims. Treat every observation as descriptive, not inferential.
 - **Descriptive, not predictive.** This is descriptive threat-intelligence analysis, not statistical modelling. It characterizes what happened; it does not forecast or generalize to a population.
 - **Placement is confounded.** With one repository per placement, the concentration of traffic on `terraform.tfvars` cannot be cleanly attributed to the file type — it is confounded with which specific key reached a shared credential feed. See [`docs/fleet_placement_analysis.md`](docs/fleet_placement_analysis.md).
 - **No attribution of people.** Enrichment identifies infrastructure (IPs, ASNs, geography), not the humans behind it. Attributing individuals is out of scope and would require legal process.

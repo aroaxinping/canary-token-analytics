@@ -1,12 +1,12 @@
 # Data Dictionary — processed canary-token dataset
 
 Enriched from `data/raw/canary_alerts_raw.csv`, the real events captured by the
-canary-token fleet (116 events as of 2026-08-28, and growing as tokens keep
+canary-token fleet (462 events as of 2026-08-30, and growing as tokens keep
 firing). Geo/ASN/org values come from live `ipinfo.io` lookups; GreyNoise
 columns come from the GreyNoise community API. Fields that could not be
 resolved are left empty — never guessed.
 
-## `alerts_enriched.csv` — one row per event (116 rows)
+## `alerts_enriched.csv` — one row per event (462 rows)
 
 | Column | Description |
 | --- | --- |
@@ -39,7 +39,7 @@ resolved are left empty — never guessed.
 | `intent_phase` | Attack-lifecycle phase (see taxonomy): `validation`, `reconnaissance`, `abuse-prep`, `persistence`, `resource-abuse`, `defense`. |
 | `intent_description` | Human-readable explanation of the operator's intent for that event. |
 
-## `ip_intel.csv` — one row per unique attacker IP (84 rows)
+## `ip_intel.csv` — one row per unique attacker IP (120 rows)
 
 | Column | Description |
 | --- | --- |
@@ -65,17 +65,17 @@ resolved are left empty — never guessed.
   AWS's own fraud/quarantine detections, not attacker infrastructure — they
   are not looked up.
 - **GreyNoise `gn_*` columns are empty for this batch.** The GreyNoise
-  *community* API rate-limits bulk querying, and the 22-IP run came back
+  *community* API rate-limits bulk querying, and the bulk run came back
   without data. This is a tooling limitation, **not** a genuine absence of
   signal: a manual single lookup of `192.241.104.43` returns
   `noise=true` (a known internet-wide scanner, last seen 2026-08-27). Treat
   the empty `gn_*` fields as "not retrieved", and re-run individual lookups
   when the signal matters.
-- **`infra_type` now resolves for all but 6 of 84 IPs.** The keyword classifier
+- **`infra_type` now resolves for all but 14 of 120 IPs.** The keyword classifier
   runs first; where an org string is ambiguous (e.g. `B2 Net Solutions Inc.`),
   the ip-api `proxy`/`hosting`/`mobile` flags fill the gap with a reliable
   signal (`datacenter/hosting` or `residential/mobile`) instead of leaving it
-  blank. The remaining 6 had no signal from either source and stay empty rather
+  blank. The remaining 14 had no signal from either source and stay empty rather
   than guessed.
 - `182.4.101.162` resolves to PT. Telekomunikasi Selular (Telkomsel), an
   Indonesian **mobile** carrier; classified `residential/mobile`. The

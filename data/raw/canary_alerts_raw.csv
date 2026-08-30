@@ -115,3 +115,349 @@ seq,datetime_utc,date_utc,time_utc,source_ip,event_name,user_agent,alert_type,to
 114,2026-08-28T22:14:00Z,2026-08-28,22:14,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
 115,2026-08-28T22:14:00Z,2026-08-28,22:14,152.232.100.239,GetCallerIdentity,"Boto3/1.43.80 md/Botocore#1.43.80 ua/2.1 os/linux#6.12.43+deb13-amd64 md/arch#x86_64 lang/python#3.13.5 md/pyimpl#CPython m/D,e,b,Z cfg/retry-mode#legacy Botocore/1.43.80",ip_triggered,5,terraform.tfvars,email
 116,2026-08-28T22:15:00Z,2026-08-28,22:15,47.85.164.151,DescribeInstances,"Boto3/1.43.80 md/Botocore#1.43.80 ua/2.1 os/windows#2022Server md/arch#amd64 lang/python#3.14.3 md/pyimpl#CPython m/b,e,F,Z cfg/retry-mode#adaptive Botocore/1.43.80",ip_triggered,1,.env,email
+117,2026-08-25T17:02:00Z,2026-08-25,17:02,172.58.243.229,InvokeModel,"Boto3/1.43.74 md/Botocore#1.43.74 ua/2.1 os/linux#5.15.0-46-generic md/arch#x86_64 lang/python#3.10.12 md/pyimpl#CPython m/Z,e,b,E cfg/retry-mode#standard Botocore/1.43.74",ip_triggered,1,.env,email
+118,2026-08-25T17:17:00Z,2026-08-25,17:17,81.31.232.169,InvokeModel,bedrock-direct-test/1.0,ip_triggered,1,.env,email
+119,2026-08-25T17:20:00Z,2026-08-25,17:20,81.31.232.169,InvokeModel,bedrock-direct-test/1.0,ip_triggered,1,.env,email
+120,2026-08-25T18:23:00Z,2026-08-25,18:23,216.73.160.202,GetCallerIdentity,"Boto3/1.38.31 md/Botocore#1.38.31 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.11.2 md/pyimpl#CPython m/D,b,Z cfg/retry-mode#legacy Botocore/1.38.31",ip_triggered,1,.env,email
+121,2026-08-28T22:16:00Z,2026-08-28,22:16,47.85.164.151,GetAccountPasswordPolicy,"Boto3/1.43.80 md/Botocore#1.43.80 ua/2.1 os/windows#2022Server md/arch#amd64 lang/python#3.14.3 md/pyimpl#CPython m/b,e,F,Z cfg/retry-mode#adaptive Botocore/1.43.80",ip_triggered,1,.env,email
+122,2026-08-28T22:20:00Z,2026-08-28,22:20,45.67.3.40,ListFoundationModels,"Boto3/1.43.80 md/Botocore#1.43.80 ua/2.1 os/linux#6.12.43+deb13-amd64 md/arch#x86_64 lang/python#3.13.5 md/pyimpl#CPython m/Z,e,b,D cfg/retry-mode#legacy Botocore/1.43.80",ip_triggered,5,terraform.tfvars,email
+123,2026-08-28T22:21:00Z,2026-08-28,22:21,192.210.132.27,InvokeModel,"Boto3/1.43.80 md/Botocore#1.43.80 ua/2.1 os/linux#6.12.43+deb13-amd64 md/arch#x86_64 lang/python#3.13.5 md/pyimpl#CPython m/Z,e,b,D cfg/retry-mode#legacy Botocore/1.43.80",ip_triggered,5,terraform.tfvars,email
+124,2026-08-28T22:27:00Z,2026-08-28,22:27,139.162.165.123,GetCallerIdentity,python-requests/2.34.2,ip_triggered,2,.env,email
+125,2026-08-28T22:37:00Z,2026-08-28,22:37,82.22.234.108,ListAttachedUserPolicies,"Boto3/1.43.80 md/Botocore#1.43.80 ua/2.1 os/linux#6.12.43+deb13-amd64 md/arch#x86_64 lang/python#3.13.5 md/pyimpl#CPython m/D,Z,e,b cfg/retry-mode#legacy Botocore/1.43.80",ip_triggered,5,terraform.tfvars,email
+126,2026-08-28T22:53:00Z,2026-08-28,22:53,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+127,2026-08-28T22:55:00Z,2026-08-28,22:55,104.252.196.182,GetCallerIdentity,"Boto3/1.43.80 md/Botocore#1.43.80 ua/2.1 os/linux#6.12.43+deb13-amd64 md/arch#x86_64 lang/python#3.13.5 md/pyimpl#CPython m/e,D,Z,b cfg/retry-mode#legacy Botocore/1.43.80",ip_triggered,5,terraform.tfvars,email
+128,2026-08-28T23:02:00Z,2026-08-28,23:02,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+129,2026-08-28T23:09:00Z,2026-08-28,23:09,2.26.160.172,ListAccountAliases,"Boto3/1.43.82 md/Botocore#1.43.82 ua/2.1 os/linux#6.8.0-111-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,b,D,e cfg/retry-mode#legacy Botocore/1.43.82",ip_triggered,2,.env,email
+130,2026-08-28T23:17:00Z,2026-08-28,23:17,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+131,2026-08-28T23:18:00Z,2026-08-28,23:18,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+132,2026-08-28T23:21:00Z,2026-08-28,23:21,45.148.10.150,GetSendQuota,aws-sdk-go-v2/1.42.0 ua/2.1 os/linux lang/go#1.25.11 md/GOOS#linux md/GOARCH#amd64 api/ses#1.34.22 m/E,ip_triggered,2,.env,email
+133,2026-08-28T23:22:00Z,2026-08-28,23:22,45.148.10.150,GetSendQuota,aws-sdk-go-v2/1.42.0 ua/2.1 os/linux lang/go#1.25.11 md/GOOS#linux md/GOARCH#amd64 api/ses#1.34.22 m/E,ip_triggered,2,.env,email
+134,2026-08-28T23:24:00Z,2026-08-28,23:24,45.38.89.211,ListFoundationModels,"Boto3/1.43.80 md/Botocore#1.43.80 ua/2.1 os/linux#6.12.43+deb13-amd64 md/arch#x86_64 lang/python#3.13.5 md/pyimpl#CPython m/Z,e,D,b cfg/retry-mode#legacy Botocore/1.43.80",ip_triggered,5,terraform.tfvars,email
+135,2026-08-28T23:26:00Z,2026-08-28,23:26,2.26.160.172,ListAccountAliases,"Boto3/1.43.82 md/Botocore#1.43.82 ua/2.1 os/linux#6.8.0-111-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,b,D,e cfg/retry-mode#legacy Botocore/1.43.82",ip_triggered,3,config.ini,email
+136,2026-08-28T23:31:00Z,2026-08-28,23:31,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+137,2026-08-28T23:32:00Z,2026-08-28,23:32,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+138,2026-08-28T23:40:00Z,2026-08-28,23:40,185.48.52.13,GetCallerIdentity,"Boto3/1.43.80 md/Botocore#1.43.80 ua/2.1 os/linux#6.12.43+deb13-amd64 md/arch#x86_64 lang/python#3.13.5 md/pyimpl#CPython m/Z,D,e,b cfg/retry-mode#legacy Botocore/1.43.80",ip_triggered,5,terraform.tfvars,email
+139,2026-08-28T23:42:00Z,2026-08-28,23:42,45.150.177.155,GetCallerIdentity,"Boto3/1.43.80 md/Botocore#1.43.80 ua/2.1 os/linux#6.12.43+deb13-amd64 md/arch#x86_64 lang/python#3.13.5 md/pyimpl#CPython m/D,e,b,Z cfg/retry-mode#legacy Botocore/1.43.80",ip_triggered,5,terraform.tfvars,email
+140,2026-08-28T23:45:00Z,2026-08-28,23:45,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+141,2026-08-28T23:46:00Z,2026-08-28,23:46,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+142,2026-08-29T00:00:00Z,2026-08-29,00:00,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+143,2026-08-29T00:14:00Z,2026-08-29,00:14,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+144,2026-08-29T00:27:00Z,2026-08-29,00:27,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+145,2026-08-29T00:28:00Z,2026-08-29,00:28,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+146,2026-08-29T00:41:00Z,2026-08-29,00:41,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+147,2026-08-29T00:42:00Z,2026-08-29,00:42,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+148,2026-08-29T00:56:00Z,2026-08-29,00:56,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+149,2026-08-29T00:57:00Z,2026-08-29,00:57,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+150,2026-08-29T00:58:00Z,2026-08-29,00:58,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+151,2026-08-29T01:10:00Z,2026-08-29,01:10,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+152,2026-08-29T01:25:00Z,2026-08-29,01:25,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+153,2026-08-29T01:42:00Z,2026-08-29,01:42,45.67.216.15,ListEmailIdentities,Bun/1.3.14,ip_triggered,2,.env,email
+154,2026-08-29T01:45:00Z,2026-08-29,01:45,63.135.161.8,InvokeModel,"Boto3/1.43.81 md/Botocore#1.43.81 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.11.2 md/pyimpl#CPython m/e,b,E,Z cfg/retry-mode#standard Botocore/1.43.81",ip_triggered,1,.env,email
+155,2026-08-29T01:50:00Z,2026-08-29,01:50,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+156,2026-08-29T01:51:00Z,2026-08-29,01:51,154.137.0.30,GetSendQuota,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",ip_triggered,2,.env,email
+157,2026-08-29T01:51:00Z,2026-08-29,01:51,154.137.0.30,GetSendQuota,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",ip_triggered,1,.env,email
+158,2026-08-29T01:52:00Z,2026-08-29,01:52,154.137.0.30,GetSendQuota,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",ip_triggered,2,.env,email
+159,2026-08-29T01:53:00Z,2026-08-29,01:53,154.137.0.30,GetSendQuota,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",ip_triggered,1,.env,email
+160,2026-08-29T01:54:00Z,2026-08-29,01:54,154.137.0.30,GetSendQuota,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",ip_triggered,1,.env,email
+161,2026-08-29T01:55:00Z,2026-08-29,01:55,154.137.0.30,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0,ip_triggered,2,.env,email
+162,2026-08-29T01:55:00Z,2026-08-29,01:55,154.137.0.30,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0,ip_triggered,1,.env,email
+163,2026-08-29T01:56:00Z,2026-08-29,01:56,154.137.0.30,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0,ip_triggered,2,.env,email
+164,2026-08-29T01:56:00Z,2026-08-29,01:56,154.137.0.30,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0,ip_triggered,1,.env,email
+165,2026-08-29T01:58:00Z,2026-08-29,01:58,154.137.0.30,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0,ip_triggered,3,config.ini,email
+166,2026-08-29T01:58:00Z,2026-08-29,01:58,154.137.0.30,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0,ip_triggered,5,terraform.tfvars,email
+167,2026-08-29T01:58:00Z,2026-08-29,01:58,154.137.0.30,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0,ip_triggered,4,settings.yaml,email
+168,2026-08-29T02:00:00Z,2026-08-29,02:00,154.137.0.30,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0,ip_triggered,4,settings.yaml,email
+169,2026-08-29T02:01:00Z,2026-08-29,02:01,154.137.0.30,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0,ip_triggered,4,settings.yaml,email
+170,2026-08-29T02:16:00Z,2026-08-29,02:16,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+171,2026-08-29T02:17:00Z,2026-08-29,02:17,103.193.144.223,GetCallerIdentity,"Boto3/1.43.80 md/Botocore#1.43.80 ua/2.1 os/linux#6.12.43+deb13-amd64 md/arch#x86_64 lang/python#3.13.5 md/pyimpl#CPython m/Z,e,D,b cfg/retry-mode#legacy Botocore/1.43.80",ip_triggered,5,terraform.tfvars,email
+172,2026-08-29T02:40:00Z,2026-08-29,02:40,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+173,2026-08-29T02:42:00Z,2026-08-29,02:42,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+174,2026-08-29T02:47:00Z,2026-08-29,02:47,154.137.0.30,GetCallerIdentity,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/b,e,Z,E cfg/retry-mode#standard Botocore/1.40.61 mailer-recon-soft/1.1",ip_triggered,5,terraform.tfvars,email
+175,2026-08-29T02:48:00Z,2026-08-29,02:48,154.137.0.30,GetSendQuota,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/b,e,Z,E cfg/retry-mode#standard Botocore/1.40.61 mailer-recon-ses/1.1",ip_triggered,5,terraform.tfvars,email
+176,2026-08-29T02:55:00Z,2026-08-29,02:55,154.137.0.30,GetCallerIdentity,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/b,e,Z,E cfg/retry-mode#standard Botocore/1.40.61 mailer-recon-soft/1.1",ip_triggered,3,config.ini,email
+177,2026-08-29T02:58:00Z,2026-08-29,02:58,87.237.15.238,ListFoundationModels,"Boto3/1.43.80 md/Botocore#1.43.80 ua/2.1 os/linux#6.12.43+deb13-amd64 md/arch#x86_64 lang/python#3.13.5 md/pyimpl#CPython m/e,Z,b,D cfg/retry-mode#legacy Botocore/1.43.80",ip_triggered,5,terraform.tfvars,email
+178,2026-08-29T03:00:00Z,2026-08-29,03:00,45.66.249.187,InvokeModel,"Boto3/1.43.80 md/Botocore#1.43.80 ua/2.1 os/linux#6.12.43+deb13-amd64 md/arch#x86_64 lang/python#3.13.5 md/pyimpl#CPython m/e,Z,b,D cfg/retry-mode#legacy Botocore/1.43.80",ip_triggered,5,terraform.tfvars,email
+179,2026-08-29T03:07:00Z,2026-08-29,03:07,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+180,2026-08-29T03:21:00Z,2026-08-29,03:21,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+181,2026-08-29T03:22:00Z,2026-08-29,03:22,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+182,2026-08-29T03:23:00Z,2026-08-29,03:23,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+183,2026-08-29T03:29:00Z,2026-08-29,03:29,193.32.126.213,GetCallerIdentity,aws-sdk-go-v2/1.42.1 ua/2.1 os/windows lang/go#1.25.5 md/GOOS#windows md/GOARCH#amd64 api/sts#1.41.10 m/e,ip_triggered,4,settings.yaml,email
+184,2026-08-29T03:29:00Z,2026-08-29,03:29,193.32.126.213,GetCallerIdentity,aws-sdk-go-v2/1.42.1 ua/2.1 os/windows lang/go#1.25.5 md/GOOS#windows md/GOARCH#amd64 api/sts#1.41.10 m/e,ip_triggered,3,config.ini,email
+185,2026-08-29T03:29:00Z,2026-08-29,03:29,193.32.126.213,GetCallerIdentity,aws-sdk-go-v2/1.42.1 ua/2.1 os/windows lang/go#1.25.5 md/GOOS#windows md/GOARCH#amd64 api/sts#1.41.10 m/e,ip_triggered,2,.env,email
+186,2026-08-29T03:31:00Z,2026-08-29,03:31,193.32.126.213,GetAccount,aws-sdk-go-v2/1.42.1 ua/2.1 os/windows lang/go#1.25.5 md/GOOS#windows md/GOARCH#amd64 api/sesv2#1.60.2 m/e,ip_triggered,3,config.ini,email
+187,2026-08-29T03:31:00Z,2026-08-29,03:31,193.32.126.213,GetAccount,aws-sdk-go-v2/1.42.1 ua/2.1 os/windows lang/go#1.25.5 md/GOOS#windows md/GOARCH#amd64 api/sesv2#1.60.2 m/e,ip_triggered,2,.env,email
+188,2026-08-29T03:31:00Z,2026-08-29,03:31,193.32.126.213,GetAccount,aws-sdk-go-v2/1.42.1 ua/2.1 os/windows lang/go#1.25.5 md/GOOS#windows md/GOARCH#amd64 api/sesv2#1.60.2 m/e,ip_triggered,4,settings.yaml,email
+189,2026-08-29T03:32:00Z,2026-08-29,03:32,193.32.126.213,GetSMSAttributes,aws-sdk-go-v2/1.42.1 ua/2.1 os/windows lang/go#1.25.5 md/GOOS#windows md/GOARCH#amd64 api/sns#1.39.15 m/e,ip_triggered,2,.env,email
+190,2026-08-29T03:33:00Z,2026-08-29,03:33,193.32.126.213,GetSMSAttributes,aws-sdk-go-v2/1.42.1 ua/2.1 os/windows lang/go#1.25.5 md/GOOS#windows md/GOARCH#amd64 api/sns#1.39.15 m/e,ip_triggered,3,config.ini,email
+191,2026-08-29T03:33:00Z,2026-08-29,03:33,193.32.126.213,GetSMSAttributes,aws-sdk-go-v2/1.42.1 ua/2.1 os/windows lang/go#1.25.5 md/GOOS#windows md/GOARCH#amd64 api/sns#1.39.15 m/e,ip_triggered,4,settings.yaml,email
+192,2026-08-29T03:44:00Z,2026-08-29,03:44,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+193,2026-08-29T03:52:00Z,2026-08-29,03:52,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+194,2026-08-29T04:07:00Z,2026-08-29,04:07,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+195,2026-08-29T04:08:00Z,2026-08-29,04:08,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+196,2026-08-29T04:33:00Z,2026-08-29,04:33,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+197,2026-08-29T04:46:00Z,2026-08-29,04:46,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+198,2026-08-29T04:47:00Z,2026-08-29,04:47,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+199,2026-08-29T05:00:00Z,2026-08-29,05:00,181.105.140.159,Converse,"Boto3/1.43.82 md/Botocore#1.43.82 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.13.2 md/pyimpl#CPython m/Z,e,E,b cfg/retry-mode#standard Botocore/1.43.82",ip_triggered,4,settings.yaml,email
+200,2026-08-29T05:00:00Z,2026-08-29,05:00,75.62.233.103,Converse,"Boto3/1.43.82 md/Botocore#1.43.82 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.13.2 md/pyimpl#CPython m/Z,e,E,b cfg/retry-mode#standard Botocore/1.43.82",ip_triggered,3,config.ini,email
+201,2026-08-29T05:01:00Z,2026-08-29,05:01,181.105.140.159,Converse,"Boto3/1.43.82 md/Botocore#1.43.82 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.13.2 md/pyimpl#CPython m/Z,e,E,b cfg/retry-mode#standard Botocore/1.43.82",ip_triggered,4,settings.yaml,email
+202,2026-08-29T05:01:00Z,2026-08-29,05:01,75.62.233.103,Converse,"Boto3/1.43.82 md/Botocore#1.43.82 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.13.2 md/pyimpl#CPython m/Z,e,E,b cfg/retry-mode#standard Botocore/1.43.82",ip_triggered,3,config.ini,email
+203,2026-08-29T05:01:00Z,2026-08-29,05:01,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+204,2026-08-29T05:20:00Z,2026-08-29,05:20,46.19.132.62,Converse,"Boto3/1.43.82 md/Botocore#1.43.82 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.13.2 md/pyimpl#CPython m/E,Z,e,b cfg/retry-mode#standard Botocore/1.43.82",ip_triggered,2,.env,email
+205,2026-08-29T05:27:00Z,2026-08-29,05:27,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+206,2026-08-29T05:32:00Z,2026-08-29,05:32,132.226.202.45,GetCallerIdentity,python-httpx/0.28.1,ip_triggered,2,.env,email
+207,2026-08-29T05:46:00Z,2026-08-29,05:46,89.221.127.172,GetCallerIdentity,"Boto3/1.43.44 md/Botocore#1.43.44 ua/2.1 os/macos#25.6.0 md/arch#arm64 lang/python#3.13.13 md/pyimpl#CPython m/Z,E,e,b cfg/retry-mode#standard Botocore/1.43.44",ip_triggered,5,terraform.tfvars,email
+208,2026-08-29T05:48:00Z,2026-08-29,05:48,89.221.127.172,Converse,"Boto3/1.43.44 md/Botocore#1.43.44 ua/2.1 os/macos#25.6.0 md/arch#arm64 lang/python#3.13.13 md/pyimpl#CPython m/Z,E,e,b cfg/retry-mode#standard Botocore/1.43.44",ip_triggered,5,terraform.tfvars,email
+209,2026-08-29T05:49:00Z,2026-08-29,05:49,89.221.127.172,Converse,"Boto3/1.43.44 md/Botocore#1.43.44 ua/2.1 os/macos#25.6.0 md/arch#arm64 lang/python#3.13.13 md/pyimpl#CPython m/Z,E,e,b cfg/retry-mode#standard Botocore/1.43.44",ip_triggered,5,terraform.tfvars,email
+210,2026-08-29T05:52:00Z,2026-08-29,05:52,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+211,2026-08-29T05:53:00Z,2026-08-29,05:53,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+212,2026-08-29T06:18:00Z,2026-08-29,06:18,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+213,2026-08-29T06:31:00Z,2026-08-29,06:31,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+214,2026-08-29T06:32:00Z,2026-08-29,06:32,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+215,2026-08-29T06:56:00Z,2026-08-29,06:56,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+216,2026-08-29T06:58:00Z,2026-08-29,06:58,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+217,2026-08-29T07:10:00Z,2026-08-29,07:10,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+218,2026-08-29T07:11:00Z,2026-08-29,07:11,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+219,2026-08-29T07:20:00Z,2026-08-29,07:20,152.233.13.145,GetCallerIdentity,"Boto3/1.43.79 md/Botocore#1.43.79 ua/2.1 os/linux#6.18.33.1-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.11.16 md/pyimpl#CPython m/Z,e,D,b cfg/retry-mode#legacy Botocore/1.43.79",ip_triggered,2,.env,email
+220,2026-08-29T07:22:00Z,2026-08-29,07:22,152.233.13.145,InvokeModel,"Boto3/1.43.79 md/Botocore#1.43.79 ua/2.1 os/linux#6.18.33.1-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.11.16 md/pyimpl#CPython m/Z,e,D,b cfg/retry-mode#legacy Botocore/1.43.79",ip_triggered,2,.env,email
+221,2026-08-29T07:32:00Z,2026-08-29,07:32,132.226.202.45,GetCallerIdentity,python-httpx/0.28.1,ip_triggered,2,.env,email
+222,2026-08-29T07:37:00Z,2026-08-29,07:37,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+223,2026-08-29T07:57:00Z,2026-08-29,07:57,41.33.240.195,GetSendQuota,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",ip_triggered,5,terraform.tfvars,email
+224,2026-08-29T08:01:00Z,2026-08-29,08:01,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+225,2026-08-29T08:03:00Z,2026-08-29,08:03,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+226,2026-08-29T08:17:00Z,2026-08-29,08:17,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+227,2026-08-29T08:18:00Z,2026-08-29,08:18,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+228,2026-08-29T08:30:00Z,2026-08-29,08:30,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+229,2026-08-29T08:32:00Z,2026-08-29,08:32,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+230,2026-08-29T08:45:00Z,2026-08-29,08:45,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+231,2026-08-29T08:46:00Z,2026-08-29,08:46,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+232,2026-08-29T09:00:00Z,2026-08-29,09:00,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+233,2026-08-29T09:21:00Z,2026-08-29,09:21,146.103.40.12,ListAttachedUserPolicies,"Boto3/1.43.68 md/Botocore#1.43.68 ua/2.1 os/linux#6.1.0-31-amd64 md/arch#x86_64 lang/python#3.11.2 md/pyimpl#CPython m/b,e,Z,D cfg/retry-mode#legacy Botocore/1.43.68",ip_triggered,2,.env,email
+234,2026-08-29T09:25:00Z,2026-08-29,09:25,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+235,2026-08-29T09:26:00Z,2026-08-29,09:26,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+236,2026-08-29T09:32:00Z,2026-08-29,09:32,45.148.10.150,ListInferenceProfiles,Go-http-client/1.1,ip_triggered,2,.env,email
+237,2026-08-29T09:33:00Z,2026-08-29,09:33,45.148.10.150,ListInferenceProfiles,Go-http-client/1.1,ip_triggered,2,.env,email
+238,2026-08-29T09:34:00Z,2026-08-29,09:34,45.148.10.150,ListFoundationModels,Go-http-client/1.1,ip_triggered,2,.env,email
+239,2026-08-29T09:35:00Z,2026-08-29,09:35,45.148.10.150,ListInferenceProfiles,Boto3/1.37.38 md/Botocore#1.37.38 ua/2.1 os/linux#5.4.0-216-generic md/arch#x86_64 lang/python#3.8.10 md/pyimpl#CPython cfg/retry-mode#standard Botocore/1.37.38,ip_triggered,2,.env,email
+240,2026-08-29T09:36:00Z,2026-08-29,09:36,45.148.10.150,ListInferenceProfiles,Boto3/1.37.38 md/Botocore#1.37.38 ua/2.1 os/linux#5.4.0-216-generic md/arch#x86_64 lang/python#3.8.10 md/pyimpl#CPython cfg/retry-mode#standard Botocore/1.37.38,ip_triggered,2,.env,email
+241,2026-08-29T09:39:00Z,2026-08-29,09:39,31.10.146.45,GetAccount,aws-sdk-go/1.55.7 (go1.24.3; windows; amd64),ip_triggered,2,.env,email
+242,2026-08-29T09:40:00Z,2026-08-29,09:40,31.10.146.45,GetAccount,aws-sdk-go/1.55.7 (go1.24.3; windows; amd64),ip_triggered,2,.env,email
+243,2026-08-29T09:54:00Z,2026-08-29,09:54,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+244,2026-08-29T09:55:00Z,2026-08-29,09:55,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+245,2026-08-29T10:15:00Z,2026-08-29,10:15,41.33.240.195,AttachUserPolicy,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/E,e,b,Z cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,5,terraform.tfvars,email
+246,2026-08-29T10:16:00Z,2026-08-29,10:16,41.33.240.195,GetAccount,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/E,e,b,Z cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,5,terraform.tfvars,email
+247,2026-08-29T10:18:00Z,2026-08-29,10:18,41.33.240.195,DescribeInstances,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/E,e,b,Z cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,2,.env,email
+248,2026-08-29T10:19:00Z,2026-08-29,10:19,41.33.240.195,GetSendQuota,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/E,e,b,Z cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,5,terraform.tfvars,email
+249,2026-08-29T10:19:00Z,2026-08-29,10:19,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+250,2026-08-29T10:19:00Z,2026-08-29,10:19,41.33.240.195,GetCallerIdentity,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/E,e,b,Z cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,1,.env,email
+251,2026-08-29T10:19:00Z,2026-08-29,10:19,41.33.240.195,GetCallerIdentity,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/E,e,b,Z cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,3,config.ini,email
+252,2026-08-29T10:19:00Z,2026-08-29,10:19,41.33.240.195,DescribeInstances,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/E,e,b,Z cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,4,settings.yaml,email
+253,2026-08-29T10:20:00Z,2026-08-29,10:20,41.33.240.195,GetAccount,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/E,e,b,Z cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,5,terraform.tfvars,email
+254,2026-08-29T10:21:00Z,2026-08-29,10:21,41.33.240.195,GetSendQuota,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/E,e,b,Z cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,2,.env,email
+255,2026-08-29T10:21:00Z,2026-08-29,10:21,41.33.240.195,GetSendQuota,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/E,e,b,Z cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,4,settings.yaml,email
+256,2026-08-29T10:21:00Z,2026-08-29,10:21,41.33.240.195,GetSendQuota,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/E,e,b,Z cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,3,config.ini,email
+257,2026-08-29T10:21:00Z,2026-08-29,10:21,41.33.240.195,GetAccount,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/E,e,b,Z cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,5,terraform.tfvars,email
+258,2026-08-29T10:21:00Z,2026-08-29,10:21,41.33.240.195,GetCallerIdentity,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/E,e,b,Z cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,1,.env,email
+259,2026-08-29T10:22:00Z,2026-08-29,10:22,41.33.240.195,GetCallerIdentity,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/E,e,b,Z cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,2,.env,email
+260,2026-08-29T10:33:00Z,2026-08-29,10:33,132.226.202.45,GetCallerIdentity,python-httpx/0.28.1,ip_triggered,2,.env,email
+261,2026-08-29T10:35:00Z,2026-08-29,10:35,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+262,2026-08-29T10:36:00Z,2026-08-29,10:36,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+263,2026-08-29T10:40:00Z,2026-08-29,10:40,41.33.240.195,GetSendQuota,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",ip_triggered,3,config.ini,email
+264,2026-08-29T10:41:00Z,2026-08-29,10:41,41.33.240.195,GetSendQuota,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",ip_triggered,3,config.ini,email
+265,2026-08-29T10:42:00Z,2026-08-29,10:42,41.33.240.195,GetSendQuota,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",ip_triggered,3,config.ini,email
+266,2026-08-29T10:50:00Z,2026-08-29,10:50,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+267,2026-08-29T11:15:00Z,2026-08-29,11:15,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+268,2026-08-29T11:17:00Z,2026-08-29,11:17,41.33.240.195,GetSendQuota,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",ip_triggered,2,.env,email
+269,2026-08-29T11:18:00Z,2026-08-29,11:18,41.33.240.195,GetSendQuota,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",ip_triggered,2,.env,email
+270,2026-08-29T11:19:00Z,2026-08-29,11:19,41.33.240.195,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0,ip_triggered,2,.env,email
+271,2026-08-29T11:19:00Z,2026-08-29,11:19,41.33.240.195,GetSendQuota,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",ip_triggered,5,terraform.tfvars,email
+272,2026-08-29T11:21:00Z,2026-08-29,11:21,41.33.240.195,GetSendQuota,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",ip_triggered,5,terraform.tfvars,email
+273,2026-08-29T11:28:00Z,2026-08-29,11:28,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+274,2026-08-29T11:29:00Z,2026-08-29,11:29,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+275,2026-08-29T11:33:00Z,2026-08-29,11:33,88.150.154.27,GetCallerIdentity,python-requests/2.34.2,ip_triggered,2,.env,email
+276,2026-08-29T11:42:00Z,2026-08-29,11:42,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+277,2026-08-29T11:44:00Z,2026-08-29,11:44,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+278,2026-08-29T11:57:00Z,2026-08-29,11:57,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+279,2026-08-29T11:58:00Z,2026-08-29,11:58,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+280,2026-08-29T12:24:00Z,2026-08-29,12:24,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+281,2026-08-29T12:26:00Z,2026-08-29,12:26,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+282,2026-08-29T12:34:00Z,2026-08-29,12:34,132.226.202.45,GetCallerIdentity,python-httpx/0.28.1,ip_triggered,2,.env,email
+283,2026-08-29T12:50:00Z,2026-08-29,12:50,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+284,2026-08-29T12:51:00Z,2026-08-29,12:51,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+285,2026-08-29T13:05:00Z,2026-08-29,13:05,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+286,2026-08-29T13:19:00Z,2026-08-29,13:19,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+287,2026-08-29T13:20:00Z,2026-08-29,13:20,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+288,2026-08-29T13:32:00Z,2026-08-29,13:32,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+289,2026-08-29T13:33:00Z,2026-08-29,13:33,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+290,2026-08-29T13:34:00Z,2026-08-29,13:34,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+291,2026-08-29T13:47:00Z,2026-08-29,13:47,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+292,2026-08-29T13:48:00Z,2026-08-29,13:48,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+293,2026-08-29T14:02:00Z,2026-08-29,14:02,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+294,2026-08-29T14:17:00Z,2026-08-29,14:17,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+295,2026-08-29T14:31:00Z,2026-08-29,14:31,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+296,2026-08-29T14:33:00Z,2026-08-29,14:33,157.85.97.242,GetCallerIdentity,"Boto3/1.43.80 md/Botocore#1.43.80 ua/2.1 os/linux#6.12.43+deb13-amd64 md/arch#x86_64 lang/python#3.13.5 md/pyimpl#CPython m/Z,D,b,e cfg/retry-mode#legacy Botocore/1.43.80",ip_triggered,5,terraform.tfvars,email
+297,2026-08-29T14:34:00Z,2026-08-29,14:34,132.226.202.45,GetCallerIdentity,python-httpx/0.28.1,ip_triggered,2,.env,email
+298,2026-08-29T14:37:00Z,2026-08-29,14:37,103.130.61.61,InvokeModel,"Boto3/1.43.80 md/Botocore#1.43.80 ua/2.1 os/linux#6.12.43+deb13-amd64 md/arch#x86_64 lang/python#3.13.5 md/pyimpl#CPython m/Z,D,b,e cfg/retry-mode#legacy Botocore/1.43.80",ip_triggered,5,terraform.tfvars,email
+299,2026-08-29T14:40:00Z,2026-08-29,14:40,203.150.113.244,InvokeModel,"Boto3/1.43.80 md/Botocore#1.43.80 ua/2.1 os/linux#6.12.43+deb13-amd64 md/arch#x86_64 lang/python#3.13.5 md/pyimpl#CPython m/Z,D,b,e cfg/retry-mode#legacy Botocore/1.43.80",ip_triggered,5,terraform.tfvars,email
+300,2026-08-29T14:45:00Z,2026-08-29,14:45,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+301,2026-08-29T14:46:00Z,2026-08-29,14:46,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+302,2026-08-29T15:00:00Z,2026-08-29,15:00,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+303,2026-08-29T15:01:00Z,2026-08-29,15:01,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+304,2026-08-29T15:14:00Z,2026-08-29,15:14,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+305,2026-08-29T15:15:00Z,2026-08-29,15:15,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+306,2026-08-29T15:29:00Z,2026-08-29,15:29,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+307,2026-08-29T15:35:00Z,2026-08-29,15:35,132.226.202.45,GetCallerIdentity,python-httpx/0.28.1,ip_triggered,2,.env,email
+308,2026-08-29T15:42:00Z,2026-08-29,15:42,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+309,2026-08-29T15:43:00Z,2026-08-29,15:43,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+310,2026-08-29T15:44:00Z,2026-08-29,15:44,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+311,2026-08-29T15:57:00Z,2026-08-29,15:57,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+312,2026-08-29T16:10:00Z,2026-08-29,16:10,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+313,2026-08-29T16:11:00Z,2026-08-29,16:11,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+314,2026-08-29T16:35:00Z,2026-08-29,16:35,132.226.202.45,GetCallerIdentity,python-httpx/0.28.1,ip_triggered,2,.env,email
+315,2026-08-29T16:38:00Z,2026-08-29,16:38,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+316,2026-08-29T16:52:00Z,2026-08-29,16:52,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+317,2026-08-29T17:36:00Z,2026-08-29,17:36,132.226.202.45,GetCallerIdentity,python-httpx/0.28.1,ip_triggered,2,.env,email
+318,2026-08-29T17:52:00Z,2026-08-29,17:52,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+319,2026-08-29T17:53:00Z,2026-08-29,17:53,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+320,2026-08-29T18:07:00Z,2026-08-29,18:07,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+321,2026-08-29T18:21:00Z,2026-08-29,18:21,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+322,2026-08-29T18:22:00Z,2026-08-29,18:22,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+323,2026-08-29T18:34:00Z,2026-08-29,18:34,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+324,2026-08-29T18:35:00Z,2026-08-29,18:35,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+325,2026-08-29T18:50:00Z,2026-08-29,18:50,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+326,2026-08-29T19:04:00Z,2026-08-29,19:04,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+327,2026-08-29T19:05:00Z,2026-08-29,19:05,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+328,2026-08-29T19:19:00Z,2026-08-29,19:19,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+329,2026-08-29T19:20:00Z,2026-08-29,19:20,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+330,2026-08-29T19:32:00Z,2026-08-29,19:32,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+331,2026-08-29T19:33:00Z,2026-08-29,19:33,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+332,2026-08-29T19:36:00Z,2026-08-29,19:36,132.226.202.45,GetCallerIdentity,python-httpx/0.28.1,ip_triggered,2,.env,email
+333,2026-08-29T19:46:00Z,2026-08-29,19:46,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+334,2026-08-29T19:47:00Z,2026-08-29,19:47,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+335,2026-08-29T19:58:00Z,2026-08-29,19:58,51.83.143.35,GetCallerIdentity,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",ip_triggered,3,config.ini,email
+336,2026-08-29T20:01:00Z,2026-08-29,20:01,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+337,2026-08-29T20:02:00Z,2026-08-29,20:02,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+338,2026-08-29T20:17:00Z,2026-08-29,20:17,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+339,2026-08-29T20:29:00Z,2026-08-29,20:29,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+340,2026-08-29T20:30:00Z,2026-08-29,20:30,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+341,2026-08-29T20:31:00Z,2026-08-29,20:31,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+342,2026-08-29T20:36:00Z,2026-08-29,20:36,132.226.202.45,GetCallerIdentity,python-httpx/0.28.1,ip_triggered,2,.env,email
+343,2026-08-29T20:45:00Z,2026-08-29,20:45,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+344,2026-08-29T20:59:00Z,2026-08-29,20:59,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+345,2026-08-29T21:00:00Z,2026-08-29,21:00,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+346,2026-08-29T21:12:00Z,2026-08-29,21:12,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+347,2026-08-29T21:14:00Z,2026-08-29,21:14,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+348,2026-08-29T21:15:00Z,2026-08-29,21:15,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+349,2026-08-29T21:27:00Z,2026-08-29,21:27,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+350,2026-08-29T21:28:00Z,2026-08-29,21:28,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+351,2026-08-29T21:36:00Z,2026-08-29,21:36,31.76.31.55,Converse,"Boto3/1.43.82 md/Botocore#1.43.82 ua/2.1 os/linux#6.8.0-111-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,e,D,b cfg/retry-mode#legacy Botocore/1.43.82",ip_triggered,2,.env,email
+352,2026-08-29T21:37:00Z,2026-08-29,21:37,31.76.31.55,GetCallerIdentity,"Boto3/1.43.82 md/Botocore#1.43.82 ua/2.1 os/linux#6.8.0-111-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,e,D,b cfg/retry-mode#legacy Botocore/1.43.82",ip_triggered,2,.env,email
+353,2026-08-29T21:38:00Z,2026-08-29,21:38,31.76.31.55,Converse,"Boto3/1.43.82 md/Botocore#1.43.82 ua/2.1 os/linux#6.8.0-111-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,e,D,b cfg/retry-mode#legacy Botocore/1.43.82",ip_triggered,2,.env,email
+354,2026-08-29T21:40:00Z,2026-08-29,21:40,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+355,2026-08-29T21:42:00Z,2026-08-29,21:42,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+356,2026-08-29T21:57:00Z,2026-08-29,21:57,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+357,2026-08-29T22:10:00Z,2026-08-29,22:10,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+358,2026-08-29T22:12:00Z,2026-08-29,22:12,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+359,2026-08-29T22:25:00Z,2026-08-29,22:25,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+360,2026-08-29T22:27:00Z,2026-08-29,22:27,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+361,2026-08-29T22:38:00Z,2026-08-29,22:38,132.226.202.45,GetCallerIdentity,python-httpx/0.28.1,ip_triggered,2,.env,email
+362,2026-08-29T22:40:00Z,2026-08-29,22:40,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+363,2026-08-29T22:48:00Z,2026-08-29,22:48,218.51.123.96,GetCallerIdentity,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/macos#24.6.0 md/arch#arm64 lang/python#3.12.13 md/pyimpl#CPython m/b,e,Z cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,2,.env,email
+364,2026-08-29T22:55:00Z,2026-08-29,22:55,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+365,2026-08-29T23:08:00Z,2026-08-29,23:08,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+366,2026-08-29T23:09:00Z,2026-08-29,23:09,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+367,2026-08-29T23:22:00Z,2026-08-29,23:22,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+368,2026-08-29T23:24:00Z,2026-08-29,23:24,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+369,2026-08-29T23:36:00Z,2026-08-29,23:36,41.33.240.195,ListNotebookInstances,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/b,Z,e,E cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,2,.env,email
+370,2026-08-29T23:37:00Z,2026-08-29,23:37,41.33.240.195,GetAccount,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/b,Z,e,E cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,3,config.ini,email
+371,2026-08-29T23:37:00Z,2026-08-29,23:37,41.33.240.195,ListPolicies,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/b,Z,e,E,C cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,5,terraform.tfvars,email
+372,2026-08-29T23:38:00Z,2026-08-29,23:38,41.33.240.195,PutUserPolicy,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/b,Z,e,E cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,2,.env,email
+373,2026-08-29T23:39:00Z,2026-08-29,23:39,41.33.240.195,GetAccount,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/b,Z,e,E cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,2,.env,email
+374,2026-08-29T23:39:00Z,2026-08-29,23:39,41.33.240.195,GetAccount,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/b,Z,e,E cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,5,terraform.tfvars,email
+375,2026-08-29T23:39:00Z,2026-08-29,23:39,41.33.240.195,GetSendQuota,Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/e cfg/retry-mode#standard Botocore/1.40.61,ip_triggered,3,config.ini,email
+376,2026-08-29T23:40:00Z,2026-08-29,23:40,41.33.240.195,GetSendQuota,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/b,Z,e cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,2,.env,email
+377,2026-08-29T23:40:00Z,2026-08-29,23:40,41.33.240.195,GetSendQuota,"Boto3/1.40.61 md/Botocore#1.40.61 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.14.0 md/pyimpl#CPython m/b,Z,e,E cfg/retry-mode#standard Botocore/1.40.61",ip_triggered,5,terraform.tfvars,email
+378,2026-08-29T23:52:00Z,2026-08-29,23:52,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+379,2026-08-29T23:53:00Z,2026-08-29,23:53,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+380,2026-08-29T23:56:00Z,2026-08-29,23:56,41.33.240.195,GetCallerIdentity,"Mozilla/5.0 (Macintosh; Intel Mac OS X 14_3_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Safari/605.1.15",ip_triggered,5,terraform.tfvars,email
+381,2026-08-30T00:07:00Z,2026-08-30,00:07,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+382,2026-08-30T00:08:00Z,2026-08-30,00:08,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+383,2026-08-30T00:21:00Z,2026-08-30,00:21,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+384,2026-08-30T00:35:00Z,2026-08-30,00:35,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+385,2026-08-30T00:36:00Z,2026-08-30,00:36,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+386,2026-08-30T00:38:00Z,2026-08-30,00:38,132.226.202.45,GetCallerIdentity,python-httpx/0.28.1,ip_triggered,2,.env,email
+387,2026-08-30T00:50:00Z,2026-08-30,00:50,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+388,2026-08-30T00:51:00Z,2026-08-30,00:51,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+389,2026-08-30T01:04:00Z,2026-08-30,01:04,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+390,2026-08-30T01:05:00Z,2026-08-30,01:05,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+391,2026-08-30T01:19:00Z,2026-08-30,01:19,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+392,2026-08-30T01:20:00Z,2026-08-30,01:20,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+393,2026-08-30T01:32:00Z,2026-08-30,01:32,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+394,2026-08-30T01:33:00Z,2026-08-30,01:33,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+395,2026-08-30T01:35:00Z,2026-08-30,01:35,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+396,2026-08-30T01:38:00Z,2026-08-30,01:38,132.226.202.45,GetCallerIdentity,python-httpx/0.28.1,ip_triggered,2,.env,email
+397,2026-08-30T01:39:00Z,2026-08-30,01:39,41.33.240.195,GetCallerIdentity,"Mozilla/5.0 (Macintosh; Intel Mac OS X 14_3_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Safari/605.1.15",ip_triggered,3,config.ini,email
+398,2026-08-30T01:47:00Z,2026-08-30,01:47,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+399,2026-08-30T01:49:00Z,2026-08-30,01:49,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+400,2026-08-30T02:02:00Z,2026-08-30,02:02,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+401,2026-08-30T02:17:00Z,2026-08-30,02:17,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+402,2026-08-30T02:31:00Z,2026-08-30,02:31,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+403,2026-08-30T02:32:00Z,2026-08-30,02:32,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+404,2026-08-30T02:39:00Z,2026-08-30,02:39,132.226.202.45,GetCallerIdentity,python-httpx/0.28.1,ip_triggered,2,.env,email
+405,2026-08-30T02:43:00Z,2026-08-30,02:43,89.221.127.172,Converse,"Boto3/1.43.44 md/Botocore#1.43.44 ua/2.1 os/macos#25.6.0 md/arch#arm64 lang/python#3.13.13 md/pyimpl#CPython m/Z,E,e,b cfg/retry-mode#standard Botocore/1.43.44",ip_triggered,2,.env,email
+406,2026-08-30T02:44:00Z,2026-08-30,02:44,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+407,2026-08-30T02:45:00Z,2026-08-30,02:45,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+408,2026-08-30T02:46:00Z,2026-08-30,02:46,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+409,2026-08-30T03:00:00Z,2026-08-30,03:00,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+410,2026-08-30T03:15:00Z,2026-08-30,03:15,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+411,2026-08-30T03:28:00Z,2026-08-30,03:28,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+412,2026-08-30T03:30:00Z,2026-08-30,03:30,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+413,2026-08-30T03:39:00Z,2026-08-30,03:39,132.226.202.45,GetCallerIdentity,python-httpx/0.28.1,ip_triggered,2,.env,email
+414,2026-08-30T03:42:00Z,2026-08-30,03:42,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+415,2026-08-30T03:44:00Z,2026-08-30,03:44,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+416,2026-08-30T03:58:00Z,2026-08-30,03:58,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+417,2026-08-30T04:12:00Z,2026-08-30,04:12,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+418,2026-08-30T04:26:00Z,2026-08-30,04:26,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+419,2026-08-30T04:39:00Z,2026-08-30,04:39,132.226.202.45,GetCallerIdentity,python-httpx/0.28.1,ip_triggered,2,.env,email
+420,2026-08-30T04:41:00Z,2026-08-30,04:41,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+421,2026-08-30T04:55:00Z,2026-08-30,04:55,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+422,2026-08-30T04:59:00Z,2026-08-30,04:59,104.28.228.56,GetCallerIdentity,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/e,b,Z,D cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,2,.env,email
+423,2026-08-30T05:00:00Z,2026-08-30,05:00,104.28.228.57,GetCallerIdentity,python-requests/2.34.2,ip_triggered,2,.env,email
+424,2026-08-30T05:10:00Z,2026-08-30,05:10,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+425,2026-08-30T05:25:00Z,2026-08-30,05:25,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+426,2026-08-30T05:38:00Z,2026-08-30,05:38,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+427,2026-08-30T05:39:00Z,2026-08-30,05:39,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+428,2026-08-30T05:53:00Z,2026-08-30,05:53,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+429,2026-08-30T06:07:00Z,2026-08-30,06:07,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+430,2026-08-30T06:08:00Z,2026-08-30,06:08,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+431,2026-08-30T06:22:00Z,2026-08-30,06:22,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+432,2026-08-30T06:36:00Z,2026-08-30,06:36,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+433,2026-08-30T06:37:00Z,2026-08-30,06:37,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+434,2026-08-30T06:51:00Z,2026-08-30,06:51,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+435,2026-08-30T07:04:00Z,2026-08-30,07:04,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+436,2026-08-30T07:05:00Z,2026-08-30,07:05,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+437,2026-08-30T07:18:00Z,2026-08-30,07:18,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+438,2026-08-30T07:20:00Z,2026-08-30,07:20,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+439,2026-08-30T07:33:00Z,2026-08-30,07:33,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+440,2026-08-30T07:34:00Z,2026-08-30,07:34,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+441,2026-08-30T07:35:00Z,2026-08-30,07:35,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+442,2026-08-30T07:49:00Z,2026-08-30,07:49,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+443,2026-08-30T08:03:00Z,2026-08-30,08:03,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+444,2026-08-30T08:18:00Z,2026-08-30,08:18,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+445,2026-08-30T08:31:00Z,2026-08-30,08:31,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+446,2026-08-30T08:32:00Z,2026-08-30,08:32,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+447,2026-08-30T08:45:00Z,2026-08-30,08:45,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+448,2026-08-30T08:46:00Z,2026-08-30,08:46,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+449,2026-08-30T09:01:00Z,2026-08-30,09:01,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+450,2026-08-30T09:04:00Z,2026-08-30,09:04,193.25.215.182,ListFoundationModels,python-requests/2.34.2,ip_triggered,2,.env,email
+451,2026-08-30T09:05:00Z,2026-08-30,09:05,104.28.196.56,GetCallerIdentity,python-requests/2.34.2,ip_triggered,2,.env,email
+452,2026-08-30T09:15:00Z,2026-08-30,09:15,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+453,2026-08-30T09:16:00Z,2026-08-30,09:16,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+454,2026-08-30T09:30:00Z,2026-08-30,09:30,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+455,2026-08-30T09:45:00Z,2026-08-30,09:45,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+456,2026-08-30T09:58:00Z,2026-08-30,09:58,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+457,2026-08-30T09:59:00Z,2026-08-30,09:59,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+458,2026-08-30T10:08:00Z,2026-08-30,10:08,89.116.229.201,GetCallerIdentity,"Boto3/1.43.83 md/Botocore#1.43.83 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.13 md/pyimpl#CPython m/Z,D,e,b cfg/retry-mode#legacy Botocore/1.43.83",ip_triggered,5,terraform.tfvars,email
+459,2026-08-30T10:12:00Z,2026-08-30,10:12,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+460,2026-08-30T10:13:00Z,2026-08-30,10:13,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+461,2026-08-30T10:26:00Z,2026-08-30,10:26,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+462,2026-08-30T10:28:00Z,2026-08-30,10:28,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email

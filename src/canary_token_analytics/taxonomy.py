@@ -106,6 +106,33 @@ INTENT_TAXONOMY = {
         "Enumerates which Bedrock foundation models the account can reach - "
         "precursor to LLMjacking",
     ),
+    "ListInferenceProfiles": (
+        "abuse-prep",
+        "Enumerates Bedrock inference profiles - Bedrock recon that precedes "
+        "LLMjacking",
+    ),
+    "GetSMSAttributes": (
+        "abuse-prep",
+        "Checks the SNS SMS sending settings - precursor to SMS spam/smishing "
+        "from the account",
+    ),
+    "ListEmailIdentities": (
+        "abuse-prep",
+        "Enumerates SES verified email identities - precursor to phishing from "
+        "the account",
+    ),
+    "GetAccountPasswordPolicy": (
+        "reconnaissance",
+        "Reads the account's IAM password policy - account-wide fingerprinting",
+    ),
+    "ListNotebookInstances": (
+        "reconnaissance",
+        "Enumerates SageMaker notebook instances - hunting for compute to hijack",
+    ),
+    "ListPolicies": (
+        "reconnaissance",
+        "Enumerates IAM policies to map permissions and escalation paths",
+    ),
     "Converse": (
         "resource-abuse",
         "Attempts to run AI models on AWS Bedrock at the victim's expense "

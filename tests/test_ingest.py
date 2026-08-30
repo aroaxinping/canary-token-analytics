@@ -71,6 +71,16 @@ def test_non_alert_returns_none():
     assert parse_alert_email("Just a newsletter, nothing to see here.") is None
 
 
+def test_aws_internal_source_is_not_an_attacker_ip():
+    # Regression: "AWS Internal" (AWS's own quarantine) must not be mistaken
+    # for an IP — the old regex captured the "A" of "AWS" as a hex address.
+    body = SAMPLE.replace("192.241.104.43", "AWS Internal").replace(
+        "GetCallerIdentity", "AttachUserPolicy")
+    rec = parse_alert_email(body, TOKEN_MAP)
+    assert rec["source_ip"] == "AWS Internal"
+    assert rec["alert_type"] == "aws_internal"
+
+
 def test_merge_dedups_against_existing(tmp_path):
     raw = tmp_path / "raw.csv"
     raw.write_text(
