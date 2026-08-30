@@ -20,10 +20,19 @@ The primary dataset was self-generated, not downloaded.
    an alert whenever anyone attempts to use it) was generated with
    [canarytokens.org](https://canarytokens.org) and placed in the `.env` file of a
    public GitHub repository.
-2. **Capture.** Each attempted use produced an alert email. The 16 alerts were
-   extracted from the mailbox and normalised into `data/raw/canary_alerts_raw.csv`
-   with the fields as received: timestamp (UTC), source IP, AWS API call
-   (`event_name`), and the raw boto3 `User-Agent` string.
+2. **Capture.** Each attempted use produced an alert email. Alerts are pulled
+   from Gmail over the Gmail API (read-only scope) by
+   [`scripts/fetch_gmail.py`](../scripts/fetch_gmail.py), parsed and
+   de-duplicated by the unit-tested
+   [`ingest`](../src/canary_token_analytics/ingest.py) module, and normalised
+   into `data/raw/canary_alerts_raw.csv` with the fields as received: timestamp
+   (UTC), source IP, AWS API call (`event_name`), and the raw boto3
+   `User-Agent` string. Ingestion is idempotent — re-running only appends
+   genuinely new events — so it can run unattended; a launchd job fetches and
+   rebuilds every 6 hours (see
+   [`INGESTION_SETUP.md`](INGESTION_SETUP.md) and
+   [`SCHEDULER_SETUP.md`](SCHEDULER_SETUP.md)). The first month's 16 alerts were
+   ingested this same way from the single original token.
 3. **Scrubbing.** The canary token's ID and management/auth URL are secrets (they
    grant control of the token). They were removed and never committed to this
    repository.
@@ -60,6 +69,19 @@ skipped because its lookup requires an API key.
 ---
 
 ## 3. Enrichment methodology (per field)
+
+Enrichment runs in **two tiers**. The **base tier** runs inside the main
+pipeline (`scripts/build_dataset.py`): geolocation, ASN/org, infra type,
+ip-api proxy/hosting/mobile flags, GreyNoise, user-agent parsing, and intent
+classification, written to `ip_intel.csv` and `alerts_enriched.csv`. A separate
+**deep tier** ([`enrich_deep.py`](../src/canary_token_analytics/enrich_deep.py)
+via `scripts/build_deep_osint.py`) adds a passive per-IP dossier — Shodan
+InternetDB (open ports, tags, CVEs), `whois` (netblock, org, country, abuse
+contact), and reverse DNS — cached and rate-throttled, written to
+`ip_intel_deep.csv`. Every deep lookup queries a third-party database *about*
+the IP; nothing ever connects to attacker infrastructure (see
+[`osint_deep.md`](osint_deep.md) and §8).
+
 
 | Derived field(s) | Source / tool | Confidence |
 |---|---|---|
