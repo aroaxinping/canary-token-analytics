@@ -148,6 +148,68 @@ INTENT_TAXONOMY = {
         "Attempts to run AI models on AWS Bedrock at the victim's expense "
         "(LLMjacking)",
     ),
+    "InvokeModelWithResponseStream": (
+        "resource-abuse",
+        "Attempts to run AI models on AWS Bedrock at the victim's expense "
+        "(LLMjacking), via the streaming InvokeModel API",
+    ),
+    "ConverseStream": (
+        "resource-abuse",
+        "Attempts to run AI models on AWS Bedrock at the victim's expense "
+        "(LLMjacking), via the streaming Bedrock Converse chat API",
+    ),
+    "ListKeys": (
+        "reconnaissance",
+        "Enumerates KMS keys, mapping the account's encryption material",
+    ),
+    "DescribeParameters": (
+        "reconnaissance",
+        "Enumerates SSM Parameter Store entries, hunting for stored config and "
+        "secrets to escalate with",
+    ),
+    "ListTables": (
+        "reconnaissance",
+        "Enumerates DynamoDB tables, hunting for accessible or exfiltratable "
+        "data stores",
+    ),
+    "ListTaskDefinitionFamilies": (
+        "reconnaissance",
+        "Enumerates ECS task-definition families, mapping containerised "
+        "workloads to hijack or abuse",
+    ),
+    "ListProjects": (
+        "reconnaissance",
+        "Enumerates CodeBuild projects, hunting for build pipelines and "
+        "embedded credentials",
+    ),
+    "ListApps": (
+        "reconnaissance",
+        "Enumerates deployed applications, mapping the account's hosted "
+        "workloads",
+    ),
+    "GetConnections": (
+        "reconnaissance",
+        "Enumerates service connections, mapping integrations and pivot paths",
+    ),
+    "ListConnections": (
+        "reconnaissance",
+        "Enumerates service connections, mapping integrations and pivot paths",
+    ),
+    "GetContainerServices": (
+        "reconnaissance",
+        "Enumerates Lightsail container services, mapping running compute to "
+        "hijack or abuse",
+    ),
+    "GetApis": (
+        "reconnaissance",
+        "Enumerates API Gateway APIs, mapping exposed endpoints to abuse or "
+        "pivot through",
+    ),
+    "ListRules": (
+        "reconnaissance",
+        "Enumerates EventBridge rules, mapping the account's automation and "
+        "event wiring",
+    ),
     "AttachUserPolicy": (
         "defense",
         "AWS's own automated quarantine attaching a restrictive policy to "
