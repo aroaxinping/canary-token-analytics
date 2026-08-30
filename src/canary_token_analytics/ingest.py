@@ -33,6 +33,19 @@ _UA_RE = re.compile(r"User agent:\s*\n\s*(.+)")
 _EVENT_RE = re.compile(r"Event Name:\s*\n\s*(\S+)")
 _TOKEN_RE = re.compile(r"Canarytoken ID:\s*\n\s*(\S+)")
 _REMINDER_RE = re.compile(r"AWS key en (\S+) de")
+# Alerts from the A/B *placement experiment* carry a memo of the form
+# ``ab-exp1-b1 <repo_name> (<placement>)``. They belong to a separate dataset
+# (see ``experiment/``) and must never be merged into the fleet raw.
+_EXP_MEMO_RE = re.compile(r"ab-exp(\d+)-b(\d+)\s+(\S+)\s+\((.+)\)")
+
+
+def is_experiment_email(body):
+    """True if this alert body is an A/B placement-experiment alert.
+
+    Detected by its Reminder/memo line (``ab-exp<N>-b<M> <repo> (<placement>)``),
+    which distinguishes it from a fleet alert (``AWS key en <placement> de ...``).
+    """
+    return _EXP_MEMO_RE.search(body) is not None
 
 
 def load_token_map(registry_path):
@@ -87,6 +100,24 @@ def parse_alert_email(body, token_map=None):
     cid_m = _TOKEN_RE.search(body)
     canarytoken_id = cid_m.group(1) if cid_m else ""
 
+    if is_experiment_email(body):
+        # Tag experiment alerts so ``merge_new_events`` keeps them out of the
+        # fleet raw. They are ingested separately by
+        # ``experiment/scripts/ingest_experiment.py``.
+        return {
+            "datetime_utc": f"{date_utc}T{time_utc}:00Z",
+            "date_utc": date_utc,
+            "time_utc": time_utc,
+            "source_ip": source_ip,
+            "event_name": m_event.group(1),
+            "user_agent": user_agent,
+            "alert_type": alert_type,
+            "token_id": "",
+            "placement": "",
+            "channel": "email",
+            "is_experiment": True,
+        }
+
     token_id, placement = "", ""
     if canarytoken_id in token_map:
         token_id, placement = token_map[canarytoken_id]
@@ -129,6 +160,10 @@ def merge_new_events(records, raw_path):
     fresh = []
     for rec in records:
         if rec is None:
+            continue
+        # A/B experiment alerts belong to a separate dataset; never let them
+        # into the fleet raw even if a caller passes them in.
+        if rec.get("is_experiment"):
             continue
         k = _dedup_key(rec)
         if k in seen:

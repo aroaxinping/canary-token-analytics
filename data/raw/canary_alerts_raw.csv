@@ -461,3 +461,215 @@ seq,datetime_utc,date_utc,time_utc,source_ip,event_name,user_agent,alert_type,to
 460,2026-08-30T10:13:00Z,2026-08-30,10:13,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
 461,2026-08-30T10:26:00Z,2026-08-30,10:26,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
 462,2026-08-30T10:28:00Z,2026-08-30,10:28,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+463,2026-08-30T10:41:00Z,2026-08-30,10:41,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+464,2026-08-30T10:42:00Z,2026-08-30,10:42,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+465,2026-08-30T10:42:00Z,2026-08-30,10:42,146.103.40.12,GetCallerIdentity,"Boto3/1.43.68 md/Botocore#1.43.68 ua/2.1 os/linux#6.1.0-31-amd64 md/arch#x86_64 lang/python#3.11.2 md/pyimpl#CPython m/b,e,Z,D cfg/retry-mode#legacy Botocore/1.43.68",ip_triggered,4,settings.yaml,email
+466,2026-08-30T10:42:00Z,2026-08-30,10:42,146.103.40.12,GetCallerIdentity,"Boto3/1.43.68 md/Botocore#1.43.68 ua/2.1 os/linux#6.1.0-31-amd64 md/arch#x86_64 lang/python#3.11.2 md/pyimpl#CPython m/b,e,Z,D cfg/retry-mode#legacy Botocore/1.43.68",ip_triggered,3,config.ini,email
+467,2026-08-30T10:43:00Z,2026-08-30,10:43,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+468,2026-08-30T10:55:00Z,2026-08-30,10:55,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+469,2026-08-30T10:56:00Z,2026-08-30,10:56,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+470,2026-08-30T11:11:00Z,2026-08-30,11:11,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+471,2026-08-30T11:17:00Z,2026-08-30,11:17,47.250.194.201,GetCallerIdentity,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/sts#1.41.6 m/e,ip_triggered,3,config.ini,email
+472,2026-08-30T11:19:00Z,2026-08-30,11:19,165.140.166.156,GetCallerIdentity,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/sts#1.41.6 m/e,ip_triggered,2,.env,email
+473,2026-08-30T11:19:00Z,2026-08-30,11:19,38.209.116.109,GetCallerIdentity,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/sts#1.41.6 m/e,ip_triggered,5,terraform.tfvars,email
+474,2026-08-30T11:19:00Z,2026-08-30,11:19,23.95.67.193,InvokeModel,Go-http-client/1.1,ip_triggered,3,config.ini,email
+475,2026-08-30T11:20:00Z,2026-08-30,11:20,161.132.48.30,ConverseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+476,2026-08-30T11:20:00Z,2026-08-30,11:20,47.80.67.43,InvokeModel,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+477,2026-08-30T11:20:00Z,2026-08-30,11:20,47.250.154.100,InvokeModel,Go-http-client/1.1,ip_triggered,3,config.ini,email
+478,2026-08-30T11:21:00Z,2026-08-30,11:21,161.132.48.30,InvokeModel,Go-http-client/1.1,ip_triggered,2,.env,email
+479,2026-08-30T11:21:00Z,2026-08-30,11:21,86.53.111.121,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+480,2026-08-30T11:21:00Z,2026-08-30,11:21,23.95.67.193,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,3,config.ini,email
+481,2026-08-30T11:22:00Z,2026-08-30,11:22,85.189.104.37,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,2,.env,email
+482,2026-08-30T11:22:00Z,2026-08-30,11:22,47.80.67.43,InvokeModel,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+483,2026-08-30T11:22:00Z,2026-08-30,11:22,23.95.67.193,ConverseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+484,2026-08-30T11:23:00Z,2026-08-30,11:23,161.132.48.30,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+485,2026-08-30T11:23:00Z,2026-08-30,11:23,86.53.111.121,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+486,2026-08-30T11:23:00Z,2026-08-30,11:23,47.250.194.201,ConverseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+487,2026-08-30T11:24:00Z,2026-08-30,11:24,144.34.184.77,InvokeModel,Go-http-client/1.1,ip_triggered,2,.env,email
+488,2026-08-30T11:24:00Z,2026-08-30,11:24,86.53.111.121,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,5,terraform.tfvars,email
+489,2026-08-30T11:24:00Z,2026-08-30,11:24,47.250.194.201,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+490,2026-08-30T11:25:00Z,2026-08-30,11:25,86.53.111.121,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+491,2026-08-30T11:25:00Z,2026-08-30,11:25,144.34.184.77,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+492,2026-08-30T11:25:00Z,2026-08-30,11:25,47.250.154.100,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+493,2026-08-30T11:26:00Z,2026-08-30,11:26,47.250.170.165,ConverseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+494,2026-08-30T11:26:00Z,2026-08-30,11:26,161.132.48.30,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+495,2026-08-30T11:26:00Z,2026-08-30,11:26,47.250.194.201,ConverseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+496,2026-08-30T11:27:00Z,2026-08-30,11:27,47.254.235.251,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,5,terraform.tfvars,email
+497,2026-08-30T11:27:00Z,2026-08-30,11:27,47.250.120.4,InvokeModel,Go-http-client/1.1,ip_triggered,2,.env,email
+498,2026-08-30T11:27:00Z,2026-08-30,11:27,156.235.89.46,ConverseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+499,2026-08-30T11:28:00Z,2026-08-30,11:28,85.189.104.37,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,2,.env,email
+500,2026-08-30T11:28:00Z,2026-08-30,11:28,47.250.194.201,ConverseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+501,2026-08-30T11:29:00Z,2026-08-30,11:29,47.250.170.165,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+502,2026-08-30T11:29:00Z,2026-08-30,11:29,139.135.127.35,ConverseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+503,2026-08-30T11:30:00Z,2026-08-30,11:30,165.140.166.156,ConverseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+504,2026-08-30T11:30:00Z,2026-08-30,11:30,47.80.67.43,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+505,2026-08-30T11:31:00Z,2026-08-30,11:31,139.135.127.35,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,3,config.ini,email
+506,2026-08-30T11:31:00Z,2026-08-30,11:31,165.140.166.156,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,2,.env,email
+507,2026-08-30T11:31:00Z,2026-08-30,11:31,47.250.144.128,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,5,terraform.tfvars,email
+508,2026-08-30T11:32:00Z,2026-08-30,11:32,156.235.89.46,ConverseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+509,2026-08-30T11:32:00Z,2026-08-30,11:32,165.140.166.156,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+510,2026-08-30T11:32:00Z,2026-08-30,11:32,38.209.116.109,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+511,2026-08-30T11:33:00Z,2026-08-30,11:33,161.132.48.30,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+512,2026-08-30T11:33:00Z,2026-08-30,11:33,38.209.116.109,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,5,terraform.tfvars,email
+513,2026-08-30T11:33:00Z,2026-08-30,11:33,47.250.194.201,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+514,2026-08-30T11:34:00Z,2026-08-30,11:34,85.189.104.37,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+515,2026-08-30T11:34:00Z,2026-08-30,11:34,47.250.154.100,InvokeModel,Go-http-client/1.1,ip_triggered,3,config.ini,email
+516,2026-08-30T11:34:00Z,2026-08-30,11:34,86.53.111.121,ConverseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+517,2026-08-30T11:35:00Z,2026-08-30,11:35,38.209.116.109,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+518,2026-08-30T11:35:00Z,2026-08-30,11:35,47.250.194.201,ConverseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+519,2026-08-30T11:35:00Z,2026-08-30,11:35,161.132.48.30,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+520,2026-08-30T11:36:00Z,2026-08-30,11:36,47.80.67.43,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,5,terraform.tfvars,email
+521,2026-08-30T11:36:00Z,2026-08-30,11:36,165.140.166.156,InvokeModel,Go-http-client/1.1,ip_triggered,2,.env,email
+522,2026-08-30T11:36:00Z,2026-08-30,11:36,139.135.127.35,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,3,config.ini,email
+523,2026-08-30T11:37:00Z,2026-08-30,11:37,47.254.235.251,ConverseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+524,2026-08-30T11:37:00Z,2026-08-30,11:37,85.189.104.37,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,2,.env,email
+525,2026-08-30T11:37:00Z,2026-08-30,11:37,209.166.46.186,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,3,config.ini,email
+526,2026-08-30T11:38:00Z,2026-08-30,11:38,85.189.104.37,InvokeModel,Go-http-client/1.1,ip_triggered,2,.env,email
+527,2026-08-30T11:38:00Z,2026-08-30,11:38,139.135.127.35,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+528,2026-08-30T11:38:00Z,2026-08-30,11:38,38.209.116.109,InvokeModel,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+529,2026-08-30T11:39:00Z,2026-08-30,11:39,23.27.186.186,InvokeModel,Go-http-client/1.1,ip_triggered,2,.env,email
+530,2026-08-30T11:40:00Z,2026-08-30,11:40,47.250.144.128,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+531,2026-08-30T11:40:00Z,2026-08-30,11:40,139.135.127.35,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+532,2026-08-30T11:40:00Z,2026-08-30,11:40,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+533,2026-08-30T11:41:00Z,2026-08-30,11:41,47.250.170.165,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,5,terraform.tfvars,email
+534,2026-08-30T11:41:00Z,2026-08-30,11:41,156.235.89.46,ConverseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+535,2026-08-30T11:42:00Z,2026-08-30,11:42,47.80.67.43,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+536,2026-08-30T11:42:00Z,2026-08-30,11:42,47.250.120.4,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+537,2026-08-30T11:42:00Z,2026-08-30,11:42,139.135.127.35,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+538,2026-08-30T11:43:00Z,2026-08-30,11:43,85.189.104.37,ConverseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+539,2026-08-30T11:43:00Z,2026-08-30,11:43,38.209.116.109,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+540,2026-08-30T11:43:00Z,2026-08-30,11:43,209.166.46.186,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,3,config.ini,email
+541,2026-08-30T11:44:00Z,2026-08-30,11:44,86.53.111.121,InvokeModel,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+542,2026-08-30T11:45:00Z,2026-08-30,11:45,209.166.46.186,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+543,2026-08-30T11:45:00Z,2026-08-30,11:45,165.140.166.156,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,2,.env,email
+544,2026-08-30T11:45:00Z,2026-08-30,11:45,191.101.36.64,InvokeModel,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+545,2026-08-30T11:46:00Z,2026-08-30,11:46,47.250.120.4,ConverseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+546,2026-08-30T11:46:00Z,2026-08-30,11:46,139.135.127.35,ConverseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+547,2026-08-30T11:46:00Z,2026-08-30,11:46,47.250.170.165,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+548,2026-08-30T11:47:00Z,2026-08-30,11:47,209.166.46.186,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+549,2026-08-30T11:47:00Z,2026-08-30,11:47,47.250.120.4,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+550,2026-08-30T11:47:00Z,2026-08-30,11:47,38.209.116.109,ConverseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+551,2026-08-30T11:48:00Z,2026-08-30,11:48,47.250.194.201,InvokeModel,Go-http-client/1.1,ip_triggered,3,config.ini,email
+552,2026-08-30T11:48:00Z,2026-08-30,11:48,144.34.184.77,ConverseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+553,2026-08-30T11:48:00Z,2026-08-30,11:48,47.80.67.43,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,5,terraform.tfvars,email
+554,2026-08-30T11:49:00Z,2026-08-30,11:49,47.250.154.100,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+555,2026-08-30T11:49:00Z,2026-08-30,11:49,47.250.144.128,ConverseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+556,2026-08-30T11:49:00Z,2026-08-30,11:49,165.140.166.156,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+557,2026-08-30T11:50:00Z,2026-08-30,11:50,209.166.46.186,ConverseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+558,2026-08-30T11:50:00Z,2026-08-30,11:50,161.132.48.30,ConverseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+559,2026-08-30T11:50:00Z,2026-08-30,11:50,38.209.116.109,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,5,terraform.tfvars,email
+560,2026-08-30T11:51:00Z,2026-08-30,11:51,86.53.111.121,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+561,2026-08-30T11:51:00Z,2026-08-30,11:51,85.189.104.37,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+562,2026-08-30T11:52:00Z,2026-08-30,11:52,209.166.46.186,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+563,2026-08-30T11:52:00Z,2026-08-30,11:52,47.250.120.4,ConverseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+564,2026-08-30T11:53:00Z,2026-08-30,11:53,23.95.67.193,InvokeModel,Go-http-client/1.1,ip_triggered,3,config.ini,email
+565,2026-08-30T11:53:00Z,2026-08-30,11:53,47.250.144.128,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,5,terraform.tfvars,email
+566,2026-08-30T11:53:00Z,2026-08-30,11:53,161.132.48.30,ConverseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+567,2026-08-30T11:54:00Z,2026-08-30,11:54,38.209.116.109,ConverseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+568,2026-08-30T11:54:00Z,2026-08-30,11:54,47.250.194.201,InvokeModel,Go-http-client/1.1,ip_triggered,3,config.ini,email
+569,2026-08-30T11:54:00Z,2026-08-30,11:54,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+570,2026-08-30T11:55:00Z,2026-08-30,11:55,23.95.67.193,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+571,2026-08-30T11:55:00Z,2026-08-30,11:55,47.254.235.251,InvokeModel,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+572,2026-08-30T11:56:00Z,2026-08-30,11:56,161.132.48.30,InvokeModel,Go-http-client/1.1,ip_triggered,2,.env,email
+573,2026-08-30T11:56:00Z,2026-08-30,11:56,38.209.116.109,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+574,2026-08-30T11:56:00Z,2026-08-30,11:56,47.250.194.201,ConverseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+575,2026-08-30T11:57:00Z,2026-08-30,11:57,161.132.48.30,InvokeModel,Go-http-client/1.1,ip_triggered,2,.env,email
+576,2026-08-30T11:57:00Z,2026-08-30,11:57,47.250.154.100,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,3,config.ini,email
+577,2026-08-30T11:58:00Z,2026-08-30,11:58,47.254.235.251,ConverseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+578,2026-08-30T11:58:00Z,2026-08-30,11:58,165.140.166.156,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,2,.env,email
+579,2026-08-30T11:58:00Z,2026-08-30,11:58,209.166.46.186,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+580,2026-08-30T11:59:00Z,2026-08-30,11:59,47.254.235.251,InvokeModel,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+581,2026-08-30T11:59:00Z,2026-08-30,11:59,85.189.104.37,ConverseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+582,2026-08-30T11:59:00Z,2026-08-30,11:59,156.235.89.46,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+583,2026-08-30T12:00:00Z,2026-08-30,12:00,47.254.235.251,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+584,2026-08-30T12:00:00Z,2026-08-30,12:00,85.189.104.37,InvokeModel,Go-http-client/1.1,ip_triggered,2,.env,email
+585,2026-08-30T12:00:00Z,2026-08-30,12:00,47.250.154.100,InvokeModel,Go-http-client/1.1,ip_triggered,3,config.ini,email
+586,2026-08-30T12:01:00Z,2026-08-30,12:01,47.250.144.128,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+587,2026-08-30T12:01:00Z,2026-08-30,12:01,85.189.104.37,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+588,2026-08-30T12:02:00Z,2026-08-30,12:02,38.209.116.109,InvokeModel,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+589,2026-08-30T12:02:00Z,2026-08-30,12:02,139.135.127.35,InvokeModel,Go-http-client/1.1,ip_triggered,3,config.ini,email
+590,2026-08-30T12:02:00Z,2026-08-30,12:02,161.132.48.30,InvokeModel,Go-http-client/1.1,ip_triggered,2,.env,email
+591,2026-08-30T12:03:00Z,2026-08-30,12:03,47.80.67.43,InvokeModel,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+592,2026-08-30T12:03:00Z,2026-08-30,12:03,47.250.194.201,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+593,2026-08-30T12:04:00Z,2026-08-30,12:04,47.250.120.4,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+594,2026-08-30T12:04:00Z,2026-08-30,12:04,38.209.116.109,InvokeModel,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+595,2026-08-30T12:04:00Z,2026-08-30,12:04,156.235.89.46,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+596,2026-08-30T12:05:00Z,2026-08-30,12:05,23.27.186.186,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,2,.env,email
+597,2026-08-30T12:05:00Z,2026-08-30,12:05,86.53.111.121,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+598,2026-08-30T12:05:00Z,2026-08-30,12:05,139.135.127.35,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,3,config.ini,email
+599,2026-08-30T12:06:00Z,2026-08-30,12:06,47.254.235.251,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,5,terraform.tfvars,email
+600,2026-08-30T12:06:00Z,2026-08-30,12:06,161.132.48.30,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,2,.env,email
+601,2026-08-30T12:07:00Z,2026-08-30,12:07,47.250.154.100,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,3,config.ini,email
+602,2026-08-30T12:07:00Z,2026-08-30,12:07,86.53.111.121,InvokeModelWithResponseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+603,2026-08-30T12:07:00Z,2026-08-30,12:07,47.250.120.4,InvokeModel,Go-http-client/1.1,ip_triggered,2,.env,email
+604,2026-08-30T12:08:00Z,2026-08-30,12:08,47.250.154.100,InvokeModel,Go-http-client/1.1,ip_triggered,3,config.ini,email
+605,2026-08-30T12:08:00Z,2026-08-30,12:08,38.209.116.109,InvokeModel,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+606,2026-08-30T12:08:00Z,2026-08-30,12:08,161.132.48.30,InvokeModel,Go-http-client/1.1,ip_triggered,2,.env,email
+607,2026-08-30T12:09:00Z,2026-08-30,12:09,139.135.127.35,ConverseStream,Go-http-client/1.1,ip_triggered,3,config.ini,email
+608,2026-08-30T12:09:00Z,2026-08-30,12:09,47.250.170.165,ConverseStream,Go-http-client/1.1,ip_triggered,5,terraform.tfvars,email
+609,2026-08-30T12:09:00Z,2026-08-30,12:09,161.132.48.30,ConverseStream,Go-http-client/1.1,ip_triggered,2,.env,email
+610,2026-08-30T12:10:00Z,2026-08-30,12:10,156.235.89.46,InvokeModel,Go-http-client/1.1,ip_triggered,3,config.ini,email
+611,2026-08-30T12:10:00Z,2026-08-30,12:10,47.250.170.165,Converse,aws-sdk-go-v2/1.43.7 ua/2.1 os/linux lang/go#1.26.5 md/GOOS#linux md/GOARCH#amd64 api/bedrockruntime#1.50.0 m/e,ip_triggered,5,terraform.tfvars,email
+612,2026-08-30T12:13:00Z,2026-08-30,12:13,35.237.97.174,GetCallerIdentity,TruffleHog,ip_triggered,3,config.ini,email
+613,2026-08-30T12:24:00Z,2026-08-30,12:24,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+614,2026-08-30T12:37:00Z,2026-08-30,12:37,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+615,2026-08-30T12:38:00Z,2026-08-30,12:38,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+616,2026-08-30T12:42:00Z,2026-08-30,12:42,141.98.84.138,InvokeModel,Python/3.13 aiohttp/3.13.5,ip_triggered,3,config.ini,email
+617,2026-08-30T12:52:00Z,2026-08-30,12:52,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+618,2026-08-30T12:53:00Z,2026-08-30,12:53,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+619,2026-08-30T13:00:00Z,2026-08-30,13:00,212.108.83.112,ListBuckets,audit-20260830,ip_triggered,2,.env,email
+620,2026-08-30T13:02:00Z,2026-08-30,13:02,212.108.83.112,ListBuckets,audit-20260830,ip_triggered,2,.env,email
+621,2026-08-30T13:05:00Z,2026-08-30,13:05,5.255.117.250,DescribeInstances,python-requests/2.34.2,ip_triggered,2,.env,email
+622,2026-08-30T13:07:00Z,2026-08-30,13:07,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+623,2026-08-30T13:08:00Z,2026-08-30,13:08,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+624,2026-08-30T13:22:00Z,2026-08-30,13:22,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+625,2026-08-30T13:32:00Z,2026-08-30,13:32,173.249.11.41,GetCallerIdentity,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,D,e,b cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,2,.env,email
+626,2026-08-30T13:33:00Z,2026-08-30,13:33,173.249.11.41,ListKeys,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,D,e,b cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,2,.env,email
+627,2026-08-30T13:35:00Z,2026-08-30,13:35,173.249.11.41,DescribeParameters,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,D,e,b cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,2,.env,email
+628,2026-08-30T13:37:00Z,2026-08-30,13:37,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+629,2026-08-30T13:38:00Z,2026-08-30,13:38,173.249.11.41,ListTables,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/e,P,b,D,Z cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,2,.env,email
+630,2026-08-30T13:39:00Z,2026-08-30,13:39,173.249.11.41,ListTables,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/e,P,b,D,Z cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,2,.env,email
+631,2026-08-30T13:40:00Z,2026-08-30,13:40,173.249.11.41,DescribeInstances,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,D,e,b cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,2,.env,email
+632,2026-08-30T13:42:00Z,2026-08-30,13:42,173.249.11.41,ListTaskDefinitionFamilies,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,D,e,b cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,2,.env,email
+633,2026-08-30T13:43:00Z,2026-08-30,13:43,173.249.11.41,ListProjects,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,D,e,b cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,2,.env,email
+634,2026-08-30T13:45:00Z,2026-08-30,13:45,173.249.11.41,ListApps,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,D,e,b cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,2,.env,email
+635,2026-08-30T13:46:00Z,2026-08-30,13:46,173.249.11.41,GetConnections,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,D,e,b cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,2,.env,email
+636,2026-08-30T13:47:00Z,2026-08-30,13:47,173.249.11.41,GetContainerServices,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,D,e,b cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,2,.env,email
+637,2026-08-30T13:48:00Z,2026-08-30,13:48,173.249.11.41,GetApis,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,D,e,b cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,2,.env,email
+638,2026-08-30T13:49:00Z,2026-08-30,13:49,173.249.11.41,GetApis,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,D,e,b cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,2,.env,email
+639,2026-08-30T13:50:00Z,2026-08-30,13:50,173.249.11.41,ListConnections,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,D,e,b cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,2,.env,email
+640,2026-08-30T13:52:00Z,2026-08-30,13:52,173.249.11.41,ListRules,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,D,e,b cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,2,.env,email
+641,2026-08-30T13:53:00Z,2026-08-30,13:53,173.249.11.41,ListTopics,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,D,e,b cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,2,.env,email
+642,2026-08-30T13:54:00Z,2026-08-30,13:54,173.249.11.41,ListTopics,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,D,e,b cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,2,.env,email
+643,2026-08-30T14:05:00Z,2026-08-30,14:05,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+644,2026-08-30T14:06:00Z,2026-08-30,14:06,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+645,2026-08-30T14:20:00Z,2026-08-30,14:20,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+646,2026-08-30T14:21:00Z,2026-08-30,14:21,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+647,2026-08-30T14:33:00Z,2026-08-30,14:33,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+648,2026-08-30T14:35:00Z,2026-08-30,14:35,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+649,2026-08-30T14:49:00Z,2026-08-30,14:49,62.93.167.141,ListSecrets,"Boto3/1.42.89 md/Botocore#1.42.97 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.11.15 md/pyimpl#CPython m/D,e,Z,b cfg/retry-mode#legacy Botocore/1.42.97",ip_triggered,2,.env,email
+650,2026-08-30T14:50:00Z,2026-08-30,14:50,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+651,2026-08-30T14:58:00Z,2026-08-30,14:58,89.116.229.201,GetCallerIdentity,"Boto3/1.43.83 md/Botocore#1.43.83 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.13 md/pyimpl#CPython m/Z,b,e cfg/retry-mode#legacy Botocore/1.43.83",ip_triggered,5,terraform.tfvars,email
+652,2026-08-30T15:05:00Z,2026-08-30,15:05,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+653,2026-08-30T15:20:00Z,2026-08-30,15:20,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+654,2026-08-30T15:32:00Z,2026-08-30,15:32,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+655,2026-08-30T15:33:00Z,2026-08-30,15:33,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+656,2026-08-30T15:35:00Z,2026-08-30,15:35,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+657,2026-08-30T15:39:00Z,2026-08-30,15:39,182.4.102.201,InvokeModel,"Boto3/1.43.81 md/Botocore#1.43.81 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.11.2 md/pyimpl#CPython m/E,b,e,Z cfg/retry-mode#standard Botocore/1.43.81",ip_triggered,1,.env,email
+658,2026-08-30T15:41:00Z,2026-08-30,15:41,182.4.102.201,InvokeModel,"Boto3/1.43.81 md/Botocore#1.43.81 ua/2.1 os/windows#10 md/arch#amd64 lang/python#3.11.2 md/pyimpl#CPython m/E,b,e,Z cfg/retry-mode#standard Botocore/1.43.81",ip_triggered,1,.env,email
+659,2026-08-30T15:48:00Z,2026-08-30,15:48,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+660,2026-08-30T15:49:00Z,2026-08-30,15:49,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+661,2026-08-30T16:04:00Z,2026-08-30,16:04,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+662,2026-08-30T16:18:00Z,2026-08-30,16:18,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+663,2026-08-30T16:31:00Z,2026-08-30,16:31,93.152.221.171,GetCallerIdentity,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+664,2026-08-30T16:32:00Z,2026-08-30,16:32,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+665,2026-08-30T16:33:00Z,2026-08-30,16:33,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+666,2026-08-30T16:47:00Z,2026-08-30,16:47,93.152.221.171,GetSendQuota,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36,ip_triggered,2,.env,email
+667,2026-08-30T16:51:00Z,2026-08-30,16:51,104.28.196.55,GetCallerIdentity,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/D,b,e,Z cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,5,terraform.tfvars,email
+668,2026-08-30T16:53:00Z,2026-08-30,16:53,173.249.11.41,ListSecrets,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/b,D,e,Z cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,5,terraform.tfvars,email
+669,2026-08-30T16:54:00Z,2026-08-30,16:54,173.249.11.41,ListKeys,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/b,D,e,Z cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,5,terraform.tfvars,email
+670,2026-08-30T16:55:00Z,2026-08-30,16:55,173.249.11.41,DescribeParameters,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/b,D,e,Z cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,5,terraform.tfvars,email
+671,2026-08-30T16:56:00Z,2026-08-30,16:56,173.249.11.41,DescribeParameters,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/b,D,e,Z cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,5,terraform.tfvars,email
+672,2026-08-30T16:57:00Z,2026-08-30,16:57,173.249.11.41,DescribeParameters,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/D,b,e,Z cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,5,terraform.tfvars,email
+673,2026-08-30T16:58:00Z,2026-08-30,16:58,173.249.11.41,DescribeParameters,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/D,b,e,Z cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,5,terraform.tfvars,email
+674,2026-08-30T16:59:00Z,2026-08-30,16:59,173.249.11.41,ListFunctions20150331,"Boto3/1.43.41 md/Botocore#1.43.41 ua/2.1 os/linux#6.8.0-134-generic md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/D,Z,b,e cfg/retry-mode#legacy Botocore/1.43.41",ip_triggered,5,terraform.tfvars,email

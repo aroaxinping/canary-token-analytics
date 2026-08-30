@@ -81,6 +81,55 @@ def test_aws_internal_source_is_not_an_attacker_ip():
     assert rec["alert_type"] == "aws_internal"
 
 
+# An alert from the A/B *placement experiment* — its Reminder line uses the
+# ``ab-exp<N>-b<M> <repo> (<placement>)`` memo, not the fleet's Spanish memo.
+SAMPLE_EXPERIMENT = """Your Canarytoken was triggered!
+-------------------------------
+
+An AWS key Canarytoken has been triggered by the Source IP 54.39.181.162
+
+Reminder:
+  ab-exp1-b1 snowflake-sync-agent (.env)
+
+Source IP:
+  54.39.181.162
+
+Date:
+  2026/08/30
+
+Time:
+  13:48 UTC
+
+User agent:
+  python-requests/2.33.1
+
+Event Name:
+  GetCallerIdentity
+
+Canarytoken ID:
+  npdk4z3yi87x3lr98nkb41kpb
+"""
+
+
+def test_experiment_alert_is_tagged_and_not_merged_into_fleet(tmp_path):
+    # It still parses (the experiment ingester relies on that), but is tagged.
+    rec = parse_alert_email(SAMPLE_EXPERIMENT, TOKEN_MAP)
+    assert rec is not None
+    assert rec["is_experiment"] is True
+
+    raw = tmp_path / "raw.csv"
+    raw.write_text(
+        "seq,datetime_utc,date_utc,time_utc,source_ip,event_name,user_agent,"
+        "alert_type,token_id,placement,channel\n"
+        "1,2026-08-28T09:44:00Z,2026-08-28,09:44,192.241.104.43,"
+        "GetCallerIdentity,ua,ip_triggered,5,terraform.tfvars,email\n"
+    )
+    # Merging the experiment alert must add nothing to the fleet raw.
+    combined, n = merge_new_events([rec], raw)
+    assert n == 0
+    assert len(combined) == 1
+
+
 def test_merge_dedups_against_existing(tmp_path):
     raw = tmp_path / "raw.csv"
     raw.write_text(

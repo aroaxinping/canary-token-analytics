@@ -1,8 +1,8 @@
 repo_name,block_id,wave,condition,placement,is_control,access_key_id,canarytoken_id,alert_channel,created_utc
-experiment-tracker-svc,1,1,config_ini,config.ini,False,AKIAWFNFBANQBEQLAGIM,,aroaxinping@gmail.com,2026-08-30
-snowflake-sync-agent,1,1,env,.env,False,AKIAYZM57LXROSS7MQUS,,aroaxinping@gmail.com,2026-08-30
-geo-clustering-service,1,1,ci_deploy,.github/workflows/deploy.yml,False,AKIARCY24NXNMSLFU2PF,,aroaxinping@gmail.com,2026-08-30
-propensity-scoring-api,1,1,terraform_tfvars,terraform.tfvars,False,AKIATU7L4S6WVEEUEKUK,,aroaxinping@gmail.com,2026-08-30
+experiment-tracker-svc,1,1,config_ini,config.ini,False,AKIAWFNFBANQBEQLAGIM,15sriqibn0xj6ywqoo2tq4sxg,aroaxinping@gmail.com,2026-08-30
+snowflake-sync-agent,1,1,env,.env,False,AKIAYZM57LXROSS7MQUS,npdk4z3yi87x3lr98nkb41kpb,aroaxinping@gmail.com,2026-08-30
+geo-clustering-service,1,1,ci_deploy,.github/workflows/deploy.yml,False,AKIARCY24NXNMSLFU2PF,l8q862o5iedr8xogykcdlhhpp,aroaxinping@gmail.com,2026-08-30
+propensity-scoring-api,1,1,terraform_tfvars,terraform.tfvars,False,AKIATU7L4S6WVEEUEKUK,54vl7zam401ugtuklmzo4v40u,aroaxinping@gmail.com,2026-08-30
 session-replay-parser,1,1,control,.env,True,AKIAEXAMPLEFAKE00000,,,2026-08-30
 lookalike-audience-builder,2,1,config_ini,config.ini,False,,,,
 churn-alert-dispatcher,2,1,ci_deploy,.github/workflows/deploy.yml,False,,,,
