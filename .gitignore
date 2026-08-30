@@ -39,3 +39,4 @@ experiment/build/
 # fakes only, no real secrets, and needed for build_repos.py to work.
 !experiment/templates/env/.env
 !experiment/templates/control/.env
+data/processed/deep_osint_cache.json
