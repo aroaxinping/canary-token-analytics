@@ -242,3 +242,5 @@ It does **not** attempt to identify or deanonymize the human behind any IP or do
   strings only. None was resolved-and-connected, curl'd, pinged, or HTTP-probed.
   `whois` on the *registrable* domain hits the registry (safe); it is never a
   connection to the host. This boundary is absolute.
+
+> **Deep per-IP OSINT layer:** a scripted passive pass (Shodan InternetDB + `whois` + reverse DNS) per attacker IP lives in [`osint_deep.md`](osint_deep.md) — run via `scripts/build_deep_osint.py`, output in `data/processed/ip_intel_deep.csv`.
