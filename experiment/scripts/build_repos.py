@@ -237,6 +237,7 @@ def main() -> int:
     # first so the operator sees the full picture, then bail.
     # ------------------------------------------------------------------
     problems = []
+    warnings = []
     secrets = {}
     for r in rows:
         repo = r["repo_name"]
@@ -244,8 +245,13 @@ def main() -> int:
         if not is_control:
             if not r.get("access_key_id", "").strip():
                 problems.append(f"{repo}: empty access_key_id (non-control).")
+            # canarytoken_id is analysis metadata only — it maps alerts back to
+            # this repo and is back-filled from the first alert email (the memo
+            # is a unique per-repo key). It is NOT needed to build the repo, so
+            # its absence is a warning, not a fatal error.
             if not r.get("canarytoken_id", "").strip():
-                problems.append(f"{repo}: empty canarytoken_id (non-control).")
+                warnings.append(f"{repo}: canarytoken_id not yet known "
+                                "(back-fill from first alert).")
         secret = resolve_secret(r, prompt=args.prompt_secrets)
         secrets[repo] = secret
         if not is_control and not secret and not args.dry_run:
@@ -253,6 +259,10 @@ def main() -> int:
                 f"{repo}: no secret available (set {secret_env_var(repo)} "
                 f"or use --prompt-secrets).")
 
+    if warnings:
+        print("Warnings (non-fatal):", file=sys.stderr)
+        for w in warnings:
+            print(f"  - {w}", file=sys.stderr)
     if problems:
         print("Refusing to build — guard failed:", file=sys.stderr)
         for p in problems:
