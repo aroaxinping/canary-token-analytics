@@ -1,7 +1,11 @@
 source_ip,city,region,country,asn,org,infra_type,asname,is_proxy,is_hosting,is_mobile,gn_noise,gn_riot,gn_classification,gn_name
 102.212.90.135,Johannesburg,Gauteng,ZA,AS329225,Lexistar Alliance Ltd.,datacenter/hosting,LAL1-AS,True,False,False,,,,
-103.130.61.61,Jakarta,Jakarta,ID,AS138079,PT. Fiqran Solusindo Mediatama,datacenter/hosting,FASTAMA-AS-ID,True,False,False,True,False,unknown,unknown
+103.130.61.61,Jakarta,Jakarta,ID,AS138079,PT. Fiqran Solusindo Mediatama,datacenter/hosting,FASTAMA-AS-ID,True,False,False,,,,
+103.153.159.217,Port Moresby,National Capital,PG,AS45411,APCS Australia,residential/mobile,APCSNET-AU,True,False,True,,,,
 103.193.144.223,Batam,Riau,ID,AS58821,PT Lintas Jaringan Nusantara,datacenter/hosting,IDNIC-LJN-AS-ID,True,False,False,,,,
+103.217.111.135,Dhaka,Dhaka Division,BD,AS134732,Dot Internet,,DOTINTERNET-AS-AP,False,False,False,True,False,unknown,unknown
+103.217.111.138,Dhaka,Dhaka Division,BD,AS134732,Dot Internet,,DOTINTERNET-AS-AP,False,False,False,,,,
+103.217.111.139,Dhaka,Dhaka Division,BD,AS134732,Dot Internet,,DOTINTERNET-AS-AP,False,False,False,True,False,unknown,unknown
 103.75.229.175,Brussels,Brussels Capital,BE,AS203020,HostRoyale Technologies Pvt Ltd,datacenter/hosting,HostRoyale,True,True,False,,,,
 104.224.90.91,Los Angeles,California,US,AS21769,Colocation America Corporation,datacenter VPS,AS-COLOAM,False,True,False,,,,
 104.238.9.59,Amsterdam,North Holland,NL,AS202044,"Getechbrothers, MB",datacenter/hosting,Getechbrothers-Internet,True,True,False,,,,
@@ -12,13 +16,19 @@ source_ip,city,region,country,asn,org,infra_type,asname,is_proxy,is_hosting,is_m
 104.253.219.28,Marseille,Provence-Alpes-Côte d'Azur,FR,AS59711,HZ Hosting Ltd,datacenter VPS,HZ-EU-AS,True,True,False,,,,
 104.28.196.55,Strasbourg,Grand Est,FR,AS13335,"Cloudflare, Inc.",datacenter/hosting,CLOUDFLARENET,True,False,False,True,False,unknown,unknown
 104.28.196.56,Strasbourg,Grand Est,FR,AS13335,"Cloudflare, Inc.",datacenter/hosting,CLOUDFLARENET,True,False,False,True,False,unknown,unknown
-104.28.228.56,Strasbourg,Grand Est,FR,AS13335,"Cloudflare, Inc.",datacenter/hosting,CLOUDFLARENET,True,False,False,True,False,unknown,unknown
-104.28.228.57,Strasbourg,Grand Est,FR,AS13335,"Cloudflare, Inc.",datacenter/hosting,CLOUDFLARENET,True,False,False,True,False,unknown,unknown
+104.28.196.57,Strasbourg,Grand Est,FR,AS13335,"Cloudflare, Inc.",datacenter/hosting,CLOUDFLARENET,True,False,False,True,False,unknown,unknown
+104.28.228.55,Strasbourg,Grand Est,FR,AS13335,"Cloudflare, Inc.",datacenter/hosting,CLOUDFLARENET,True,False,False,,,,
+104.28.228.56,Strasbourg,Grand Est,FR,AS13335,"Cloudflare, Inc.",datacenter/hosting,CLOUDFLARENET,True,False,False,,,,
+104.28.228.57,Strasbourg,Grand Est,FR,AS13335,"Cloudflare, Inc.",datacenter/hosting,CLOUDFLARENET,True,False,False,,,,
+104.28.228.58,Strasbourg,Grand Est,FR,AS13335,"Cloudflare, Inc.",datacenter/hosting,CLOUDFLARENET,True,False,False,,,,
 105.47.246.148,Cairo,Cairo,EG,AS37069,The Egyptian Company for Mobile Services (Mobinil),residential/mobile,MOBINIL,False,False,True,,,,
+106.214.3.14,Indore,Madhya Pradesh,IN,AS24560,"Bharti Airtel Ltd., Telemedia Services",residential/ISP,AIRTELBROADBAND-AS-AP,False,False,False,,,,
 107.181.148.28,London,England,GB,AS64080,SYN LTD,datacenter/hosting,SYN-UK,True,True,False,,,,
+117.54.157.254,Bandung,West Java,ID,AS9340,"INDO Internet, PT",,INDONET-AS-AP,False,False,False,,,,
 132.226.202.45,Frankfurt am Main,Hesse,DE,AS31898,Oracle Corporation,datacenter/hosting,ORACLE-BMC-31898,False,True,False,,,,
 139.135.127.35,Quezon City,National Capital Region,PH,AS138915,Kaopu Cloud HK Limited,datacenter/hosting,KAOPU-HK,False,True,False,,,,
 139.162.165.123,Frankfurt am Main,Hesse,DE,AS63949,Akamai Connected Cloud,datacenter/hosting,AKAMAI-LINODE-AP,False,True,False,,,,
+14.160.25.150,Hanoi,Hanoi,VN,AS45899,VNPT Corp,,VNPT-AS-VN,False,False,False,,,,
 140.99.197.126,Marseille,Provence-Alpes-Côte d'Azur,FR,AS59711,HZ Hosting Ltd,datacenter VPS,HZ-EU-AS,False,True,False,,,,
 141.98.84.138,Paris,Île-de-France,FR,AS41745,Baykov Ilya Sergeevich,datacenter/hosting,FORTIS-AS,True,False,False,,,,
 142.147.128.97,Ashburn,Virginia,US,AS2914,"NTT America, Inc.",datacenter/hosting,NTT-DATA-2914,True,True,False,,,,
@@ -36,6 +46,8 @@ source_ip,city,region,country,asn,org,infra_type,asname,is_proxy,is_hosting,is_m
 157.85.97.242,Bangkok,Bangkok,TH,AS56309,"Siamdata Communication Co.,Ltd.",,SIAMDATA-TH,False,False,False,,,,
 161.132.48.30,Lima,Lima Province,PE,AS3132,Red Cientifica Peruana,,Red Cientifica Peruana,False,False,False,,,,
 165.140.166.156,Los Angeles,California,US,AS153393,RACKVOLT CLOUD SOLUTIONS PRIVATE LIMITED,datacenter/hosting,RACKVOLT-AS-AP,False,True,False,,,,
+168.143.121.46,Los Angeles,California,US,AS2914,"NTT America, Inc.",,NTT-DATA-2914,False,False,False,,,,
+171.25.158.95,Växjö,Kronoberg,SE,AS35100,Patrik Lagerman,datacenter/hosting,PatrikWeb-Core,True,False,False,,,,
 172.121.139.119,Santa Clara,California,US,AS18779,EGIHosting,datacenter VPS,EGIHOSTING,True,True,False,,,,
 172.56.14.182,Sacramento,California,US,AS21928,"T-Mobile USA, Inc.",residential/mobile,T-MOBILE-AS21928,False,False,True,,,,
 172.56.198.175,Boston,Massachusetts,US,AS21928,"T-Mobile USA, Inc.",residential/mobile,T-MOBILE-AS21928,False,False,True,,,,
@@ -43,12 +55,14 @@ source_ip,city,region,country,asn,org,infra_type,asname,is_proxy,is_hosting,is_m
 173.211.69.215,Santa Monica,California,US,AS13332,Hype Enterprises,datacenter/hosting,HYPEENT-SJ,True,True,False,,,,
 173.239.211.245,New York City,New York,US,AS206092,F.N.S. HOLDINGS LIMITED,datacenter/hosting,SECFIREWALLAS,True,True,False,,,,
 173.249.11.41,Lauterbourg,Grand Est,FR,AS51167,Contabo GmbH,datacenter VPS,CONTABO,False,True,False,,,,
+173.249.3.102,Lauterbourg,Grand Est,FR,AS51167,Contabo GmbH,datacenter VPS,CONTABO,False,True,False,,,,
 176.113.67.230,London,England,GB,AS205544,Leaseweb UK Limited,datacenter VPS,LEASEWEB-UK-LON-11,True,True,False,,,,
 181.105.140.159,Necochea,Buenos Aires,AR,AS7303,Telecom Argentina S.A.,residential/ISP,Telecom Argentina S.A.,False,False,False,,,,
 181.214.37.90,Lisbon,Lisbon,PT,AS212238,Datacamp Limited,datacenter/hosting,CDNEXT,True,True,False,,,,
 181.214.6.149,Lisbon,Lisbon,PT,AS212238,Datacamp Limited,datacenter/hosting,CDNEXT,True,True,False,,,,
 182.4.101.162,Yogyakarta,Yogyakarta,ID,AS23693,PT. Telekomunikasi Selular,residential/mobile,TELKOMSEL-ASN-ID,False,True,True,,,,
 182.4.102.201,Yogyakarta,Yogyakarta,ID,AS23693,PT. Telekomunikasi Selular,residential/mobile,TELKOMSEL-ASN-ID,False,True,True,,,,
+182.4.103.157,Yogyakarta,Yogyakarta,ID,AS23693,PT. Telekomunikasi Selular,residential/mobile,TELKOMSEL-ASN-ID,False,True,True,,,,
 185.216.105.134,Orem,Utah,US,AS11798,"Ace Data Centers, Inc.",datacenter VPS,ACEDATACENTERS-DCH,False,True,False,,,,
 185.48.52.13,Mexico City,Mexico City,MX,AS396356,Latitude.sh,datacenter/hosting,LATITUDE-SH,True,False,False,,,,
 191.101.121.117,Zürich,Zurich,CH,AS264617,GRUPO PANAGLOBAL 15 S.A,datacenter/hosting,GRUPO PANAGLOBAL 15 S.A,True,True,False,,,,
@@ -120,7 +134,9 @@ source_ip,city,region,country,asn,org,infra_type,asname,is_proxy,is_hosting,is_m
 64.137.57.64,Saint-Denis,Île-de-France,FR,AS202044,"Getechbrothers, MB",datacenter/hosting,Getechbrothers-Internet,True,True,False,,,,
 64.137.83.108,Milan,Lombardy,IT,AS212238,Datacamp Limited,datacenter/hosting,CDNEXT,True,True,False,,,,
 64.51.234.158,Istanbul,Istanbul,TR,AS212238,Datacamp Limited,datacenter/hosting,GTT-BACKBONE,True,False,False,,,,
+74.91.125.245,Chicago,Illinois,US,AS14586,"Nuclearfallout Enterprises, Inc.",datacenter/hosting,NUCLEARFALLOUT-CHI,True,False,False,,,,
 75.62.233.103,Lawton,Oklahoma,US,AS7018,"AT&T Enterprises, LLC",residential/mobile,ATT-INTERNET4,False,False,False,,,,
+80.9.170.34,Blagnac,Occitanie,FR,AS3215,Orange S.A.,,AS3215,False,False,False,,,,
 81.31.232.169,Los Angeles,California,US,AS401443,WAP.AC LLC,,RELIABLESITE,False,False,False,,,,
 82.22.234.108,Frankfurt am Main,Hesse,DE,AS28753,Leaseweb Deutschland GmbH,datacenter VPS,LEASEWEB-DE-FRA-10,True,False,False,,,,
 82.22.245.103,Johannesburg,Gauteng,ZA,AS37153,Xneelo (Pty) Ltd,datacenter/hosting,xneelo,True,False,False,,,,
@@ -132,6 +148,7 @@ source_ip,city,region,country,asn,org,infra_type,asname,is_proxy,is_hosting,is_m
 82.27.233.49,Kyiv,Kyiv City,UA,AS30860,Virtual Systems LLC,datacenter/hosting,YURTEH-AS,True,False,False,,,,
 82.29.233.116,Bratislava,Bratislava Region,SK,AS212238,Datacamp Limited,,CDNEXT,False,False,False,,,,
 82.29.245.35,Johannesburg,Gauteng,ZA,AS37153,Xneelo (Pty) Ltd,datacenter/hosting,xneelo,True,False,False,,,,
+84.166.167.104,Aachen,North Rhine-Westphalia,DE,AS3320,Deutsche Telekom AG,,DTAG,False,False,False,,,,
 84.247.60.99,Lisbon,Lisbon,PT,AS44144,HostRoyale Technologies Pvt Ltd,datacenter/hosting,OMEGASOFT,True,True,False,,,,
 85.189.104.37,London,England,GB,AS3257,GTT Communications Inc.,residential/ISP,GTT-BACKBONE,False,False,False,,,,
 86.53.111.121,Frankfurt am Main,Hesse,DE,AS3257,GTT Communications Inc.,residential/ISP,GTT-BACKBONE,False,False,False,,,,
